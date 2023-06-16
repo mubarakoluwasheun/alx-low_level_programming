@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - Entry point of the program
 *
-* Description : the program prints a word using the function 'put'
-* function main starts code compilation here
+* The program prints a word using the function 'put'
 *
 * Description : Return 0 to indicate successful program execution
 */
