@@ -1,2 +1,2 @@
 #!/bin/bash
-echo gcc -E "$CFILE=hello.c" > "c"
+echo gcc -E "$CFILE=0-main.c" > "c"
