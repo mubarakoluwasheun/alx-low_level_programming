@@ -1,11 +1,13 @@
 #include <stdio.h>
+
 /**
- * main - Entry point of the program
+ * main: Entry point of the program
  *
- * The program prints a word using the function 'put'
+ * Desription: The program prints a word using the function 'put'
  *
- * Description : Return 0 to indicate successful program execution
+ * return: Return 0 to indicate successful program execution
  */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");

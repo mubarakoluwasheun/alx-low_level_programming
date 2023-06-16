@@ -6,17 +6,17 @@
 * Description : the program prints a word using the function 'put'
 * function main starts code compilation here
 *
-* Return : always 0 (Success)
+* Return : always returns 0
 */
 int main(void)
 {
-	int i;
 	char c;
-	float f;
+	int i;
 	long int li;
 	long long int lli;
+	float f;
 
-	printf("The size of an int is: %lu.\n", (unsigned long)sizeof(i));
+	printf("The size of a char is: %lu.\n", (unsigned long)sizeof(i));
 	printf("The size of a char is: %lu.\n", (unsigned long)sizeof(c));
 	printf("The size of a float is: %f.\n", (unsigned long)sizeof(f));
 	printf("The size of a long int is: %ld.\n",(unsigned long)sizeof(li));
