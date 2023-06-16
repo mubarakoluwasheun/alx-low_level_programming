@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main(void)			/* starts code compilation here */
-{
-	puts ("Programming is like building a multilingual puzzle\n");	/* display word with the 'puts' function */
+/* starts code compilation here */
+int main(void){
+	puts ("Programming is like building a multilingual puzzle\n");	/* display word */
 	return (0);			/* return the vale 0 */
 }
