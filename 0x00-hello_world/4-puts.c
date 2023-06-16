@@ -4,9 +4,9 @@
 * main - Entry point
 *
 * Description : the program prints a word using the function 'put'
-* function main starts code compilation here
+* @parameter: function main starts code compilation here
 *
-* Return : always 0 (Success)
+* Return : always return 0 
 */
 int main(void)
 {
