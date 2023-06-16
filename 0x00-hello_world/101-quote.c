@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - Entry point of the program
@@ -10,7 +9,8 @@
  */
 int main(void)
 {
-	const char *message = "\"and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	fwrite(message, sizeof(char), strlen(message), stdout);
+	char *message;
+	message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	fwrite(me, sizeof(char), stdout);
 	return (0);
 }
