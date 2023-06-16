@@ -3,13 +3,10 @@
 /**
  * main - Entry point of the program
  *
- * desription - The program prints a word using the function 'put'
+ * Desription - The program prints the size of various types using 'print>
  *
- * return - Return 0 to indicate successful program execution
- *
- * return value of main - main returns the string inside the puts function
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
