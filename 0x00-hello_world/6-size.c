@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
- * Main - Entry point of the program
+ * main - Entry point of the program
  *
  * Desription - The program prints the size of various types using 'printf'
  *
- * Return - Return 0 to indicate successful program execution
+ * Return: Always 0 (Success) 
  */
-
 int main(void)
 {
 	char c;
