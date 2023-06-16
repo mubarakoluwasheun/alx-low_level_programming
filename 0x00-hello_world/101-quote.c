@@ -11,6 +11,6 @@ int main(void)
 {
 	char *message;
 	message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	fwrite(me, sizeof(char), stdout);
+	fwrite(message, sizeof(char), stdout);
 	return (0);
 }
