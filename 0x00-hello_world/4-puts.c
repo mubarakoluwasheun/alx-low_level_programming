@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * Main: Entry point of the program
+ * Main - Entry point of the program
  *
- * Desription: The program prints a word using the function 'put'
+ * Desription - The program prints a word using the function 'put'
  *
- * Return: Return 0 to indicate successful program execution
+ * Return - Return 0 to indicate successful program execution
  */
 
 int main(void)
