@@ -1,13 +1,14 @@
 #include <stdio.h>
 
+#include <stdio.h>
 /**
-* main - Entry point
-*
-* Description : the program prints a word using the function 'put'
-* function main starts code compilation here
-*
-* Return : always returns 0
-*/
+ * Main - Entry point of the program
+ *
+ * Desription - The program prints the size of various types using 'printf'
+ *
+ * Return - Return 0 to indicate successful program execution
+ */
+
 int main(void)
 {
 	char c;
@@ -16,10 +17,10 @@ int main(void)
 	long long int lli;
 	float f;
 
-	printf("The size of a char is: %lu.\n", (unsigned long)sizeof(i));
 	printf("The size of a char is: %lu.\n", (unsigned long)sizeof(c));
-	printf("The size of a float is: %f.\n", (unsigned long)sizeof(f));
-	printf("The size of a long int is: %ld.\n",(unsigned long)sizeof(li));
-	printf("The size of a long long int is: %lld.\n", (unsigned long)sizeof(lli);
-	return(0);
+	printf("The size of a char is: %lu.\n", (unsigned long)sizeof(i));
+	printf("The size of a float is: %f.\n", (unsigned long)sizeof(li));
+	printf("The size of a long int is: %ld.\n",(unsigned long)sizeof(lli));
+	printf("The size of a long long int is: %lld.\n", (unsigned long)sizeof(f);
+	return (0);
 }
