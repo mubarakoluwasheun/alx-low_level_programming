@@ -1,0 +1,7 @@
+#!/bin/bash
+
+$CFILE = "hello.c"
+OUTPUT = "c"
+
+/* Run the C file through the preprocesssor */
+echo gcc -E "$CFILE" > "OUTPUT"
