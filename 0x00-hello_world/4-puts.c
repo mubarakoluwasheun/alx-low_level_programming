@@ -6,10 +6,10 @@
 * Description : the program prints a word using the function 'put'
 * function main starts code compilation here
 *
-* Return : always return 0
+* Description : Return 0 to indicate successful program execution
 */
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle\n");	/* display */
-	return (0);	/* Return 0 to indicate successful program execution */
+	puts("Programming is like building a multilingual puzzle\n");
+	return (0);
 }
