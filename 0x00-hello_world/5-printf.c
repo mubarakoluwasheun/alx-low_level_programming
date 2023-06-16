@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 /**
-*main - Entry point
-*
-* Description : the program prints a word using the function 'put'
-* function main starts code compilation here
-*
-* Return : return the value 0
-*/
+ * main - Entry point of the program
+ *
+ * Desription - The program prints the size of various types using 'printf>
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-/* print the word using the function printf */
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
