@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program
  *
- * Desription - The program prints all possible combinations
+ * Desription - The program prints all possible combinations of three digits
  *
  * Return: Always 0 (Success)
  */
@@ -11,20 +11,24 @@ int main(void)
 {
 	int i;
 	int j;
+	int k;
 
-	for (i = 0; i <= 8; i++)
+	for (i = 0; i <= 7; i++)
 	{
-		for (j = i + 1; j <= 9; j++)
+		for (j = i + 1; j <= 8; j++)
 		{
-			putchar('0' + i);
-			putchar('0' + j);
-			if (i != 8 || j != 9)
+			for (k = j + 1; k <= 9; k++)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar('0' + i);
+				putchar('0' + j);
+				putchar('0' + k);
+				if (i != 7 || j != 8 || k != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-
 	}
 	putchar('\n');
 	return (0);
