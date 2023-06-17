@@ -22,8 +22,8 @@ int main(void)
 			int firstDigitJ = j / 10;
 			int secondDigitJ = j / 10;
 
-			putchar('0' + firstDigitI)
-			putchat('0' + secondDigitI);
+			putchar('0' + firstDigitI);
+			putchar('0' + secondDigitI);
 			putchar(' ');
 			putchar('0' + firstDigitJ);
 			putchar('0' + secondDigitJ);
