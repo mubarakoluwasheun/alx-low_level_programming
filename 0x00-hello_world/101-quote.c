@@ -10,8 +10,8 @@
  */
 int main(void)
 {
-	int message;
-	message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	putchar('0' + message);
+	char m;
+	m = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	putchar('0' + m);
 	return (0);
 }
