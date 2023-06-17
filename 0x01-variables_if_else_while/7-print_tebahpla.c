@@ -4,7 +4,7 @@
 /**
  * main - Entry point of the program
  *
- * Desription - The program prints the alphabet lowercase in reverse using putchar
+ * Desription - The program prints the alphabet lowercase in reverse
  *
  * Return: Always 0 (Success)
  */
