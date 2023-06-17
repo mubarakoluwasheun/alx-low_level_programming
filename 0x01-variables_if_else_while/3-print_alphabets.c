@@ -14,20 +14,19 @@ int main(void)
 
 	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
 	{
-                char  lowercase;
+		char  lowercase;
 
-                lowercase = tolower(alphabet);
+		lowercase = tolower(alphabet);
 		putchar(lowercase);
 	}
-	putchar('\n');
 
 	for (alphabet = 'a'; alphabet <= 'z' alphabet++)
 	{
 		char uppercase;
 
 		uppercase = toupper(alphabet);
-		putchar(uppercase)
+		putchar(uppercase);
 	}
 	putchar('\n');
-        return (0);
+	return (0);
 }
