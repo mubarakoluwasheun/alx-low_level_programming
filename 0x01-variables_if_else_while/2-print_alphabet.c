@@ -19,7 +19,7 @@ int main(void)
 		char  lowercase;
 		lowercase = tolower(alphabet);
 		putchar(lowercase);
-		putchar('\n')
+		putchar('\n');
 	}
 	return (0);
 }
