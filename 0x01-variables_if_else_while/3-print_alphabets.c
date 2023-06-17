@@ -20,7 +20,7 @@ int main(void)
 		putchar(lowercase);
 	}
 
-	for (alphabet = 'a'; alphabet <= 'z' alphabet++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
 		char uppercase;
 
