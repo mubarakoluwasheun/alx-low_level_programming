@@ -4,7 +4,7 @@
 /**
  * main - Entry point of the program
  *
- * Desription - The program prints the alphabet in lowercase using putcha>
+ * Desription - The program prints the alphabet lowercase in reverse using putchar
  *
  * Return: Always 0 (Success)
  */
@@ -12,9 +12,9 @@ int main(void)
 {
 	char alphabet;
 
-	for (alphabet = 'a'; alphabet >= 'z'; alphabet--)
+	for (alphabet = 'z'; alphabet >= 'a'; alphabet--)
 	{
-		putchar('0' + alphabet);
+		putchar(alphabet);
 	}
 	putchar('\n');
 	return (0);
