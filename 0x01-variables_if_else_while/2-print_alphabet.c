@@ -10,14 +10,16 @@
  */
 int main(void)
 {
-	char alphAbet;
-	char  lowerCase;
-	lowerCase = tolower(alphAbet);
+	char alphabet;
+	char  lowercase;
+	lowercase = tolower(alphabet);
 
-	for (alphAbet = 'A'; alphAbet <= 'Z'; alphAbet++)
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
 	{
-		putchar(lowerCase);
+		char  lowercase;
+		lowercase = tolower(alphabet);
+		putchar(lowercase);
+		putchar("\n")
 	}
-	putchar("\n");
 	return (0);
 }
