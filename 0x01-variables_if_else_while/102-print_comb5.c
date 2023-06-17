@@ -23,8 +23,8 @@ int main(void)
 				putchar(' ');
 				putchar('0' + num2 / 10);
 				putchar('0' + num2 % 10);
-				putchar(' ');
 				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
