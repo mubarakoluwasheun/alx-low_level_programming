@@ -4,7 +4,7 @@
 /**
  * main - Entry point of the program
  *
- * Desription - The program prints the alphabet in both lower and uppercase using putchar>
+ * Desription - The program prints alphabet in both lower and lowercase
  *
  * Return: Always 0 (Success)
  */
