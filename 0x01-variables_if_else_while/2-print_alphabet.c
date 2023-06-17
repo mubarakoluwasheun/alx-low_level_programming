@@ -11,9 +11,11 @@
 int main(void)
 {
 	char alphabet;
+
 	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
 	{
 		char  lowercase;
+
 		lowercase = tolower(alphabet);
 
 		putchar(lowercase);
