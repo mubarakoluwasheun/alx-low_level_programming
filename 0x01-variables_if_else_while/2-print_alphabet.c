@@ -10,11 +10,12 @@
  */
 int main(void)
 {
-	for (char alphAbet = 'A'; alphAbet <= 'Z'; alphAbet++)
-	{
-		char lowerCase;
-		lowerCase = tolower(alphAbet);
+	char alphAbet;
+	char  lowerCase;
+	lowerCase = tolower(alphAbet);
 
+	for (alphAbet = 'A'; alphAbet <= 'Z'; alphAbet++)
+	{
 		putchar("%c\n", lowerCase)
 	}
 	return (0);
