@@ -4,7 +4,7 @@
 /**
  * main - Entry point of the program
  *
- * Desription - The program prints the size of various types using 'print>
+ * Desription - The program prints the alphabet in lowercase using putchar()
  *
  * Return: Always 0 (Success)
  */
@@ -16,7 +16,8 @@ int main(void)
 
 	for (alphAbet = 'A'; alphAbet <= 'Z'; alphAbet++)
 	{
-		putchar("%c\n", lowerCase)
+		putchar(lowerCase);
 	}
+	putchar("\n");
 	return (0);
 }
