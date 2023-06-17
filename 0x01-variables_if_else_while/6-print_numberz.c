@@ -13,8 +13,8 @@ int main(void)
 
 	for (base10 = 0; base10 < 10; base10++)
 	{
-		putchar("%d");
-		putchar(base10);
+		putchar('O' + digit);
 	}
+	putchar('\n');
 	return (0);
 }
