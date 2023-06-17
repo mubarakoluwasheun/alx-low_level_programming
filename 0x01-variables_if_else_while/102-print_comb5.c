@@ -3,39 +3,30 @@
 /**
  * main - Entry point of the program
  *
- * Desription - The program prints all possible combinations
+ * Desription - The program prints all possible combinations of two two-digits
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	int j;
+	int num1;
+	int num2;
 
-	for (i = 0; i <= 99; i++)
+	for (num1 = 0; num1 <= 100; num1++)
 	{
-		int firstDigitI = i / 10;
-		int secondDigitI = i / 10;
-
-		for (j = i; j <= 99; j++)
+		for (num2 = num1 + 1; num2 <= 100; num2++)
 		{
-			int firstDigitJ = j / 10;
-			int secondDigitJ = j / 10;
-
-			putchar('0' + firstDigitI);
-			putchar('0' + secondDigitI);
-			putchar(' ');
-			putchar('0' + firstDigitJ);
-			putchar('0' + secondDigitJ);
-
-			if (i != 99 || j != 99)
+			if (num1 != 100 || num2 != 100)
 			{
-				putchar(',');
+				putchar('0' + num1 / 10);
+				putchar('0' + num1 % 10);
 				putchar(' ');
+				putchar('0' + num2 / 10);
+				putchar('0' + num2 % 10);
+				putchar(',');
 			}
 		}
 	}
 	putchar('\n');
 	return (0);
 }
-
