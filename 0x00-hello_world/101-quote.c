@@ -10,8 +10,7 @@
  */
 int main(void)
 {
-	const char m[];
-	m[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char m[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 	size_t size = sizeof(char);
 	size_t length = strlen(m);
 
