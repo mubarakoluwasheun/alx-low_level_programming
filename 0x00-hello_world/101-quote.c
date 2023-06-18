@@ -10,8 +10,7 @@
  */
 int main(void)
 {
-	const char [message];
-	message = "\nand that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	const char [message]= "\nand that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	fwrite(message, sizeof(char), strlen(message), stdout);
 	return (1);
 }
