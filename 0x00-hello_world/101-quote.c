@@ -10,9 +10,11 @@
  */
 int main(void)
 {
-	const char message[]= "\nand that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	const char message[];
+	message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	size_t size = sizeof(char);
 	size_t length = strlen(message);
+
 	fwrite(message, size, length, stdout);
 	return (1);
 }
