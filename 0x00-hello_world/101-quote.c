@@ -10,8 +10,8 @@
  */
 int main(void)
 {
-	char m;
-	m = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	putchar('0' + m);
-	return (0);
+	char message;
+	message = "\nand that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	fwrite(message, sizeof(char), strlen(message), stdout);
+	return (1);
 }
