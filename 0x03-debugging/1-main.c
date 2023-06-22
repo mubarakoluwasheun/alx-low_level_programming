@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	int i;
+/**	int i;
 
 	printf("Infinite loop incoming :(\n");
 
@@ -14,8 +14,8 @@ int main(void)
 
 	while (i < 10)
 	{
-/*		putchar(i); This statment causes the infinite loop
-*/	}
+		putchar(i); This statment causes the infinite loop
+ */	}
 
 	printf("Infinite loop avoided! \\o/\n");
 
