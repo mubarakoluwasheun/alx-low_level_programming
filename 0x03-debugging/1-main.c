@@ -7,8 +7,9 @@
 
 int main(void)
 {
+	/*
 	int i;
-
+	*/
 	printf("Infinite loop incoming :(\n");
 
 	/* the putchar will cause an infinite loop
