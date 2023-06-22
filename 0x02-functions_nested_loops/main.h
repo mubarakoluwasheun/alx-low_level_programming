@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
@@ -13,4 +13,5 @@ void print_alphabet(void);
 	_putchar('\n');
 }
 
+void print_alphabet(void);
 #endif
