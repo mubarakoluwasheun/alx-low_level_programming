@@ -8,13 +8,15 @@
  *
  * @c - The constant variable
  *
- * Return: Always 0 (Success)
+ * Return: returns 1 for Success
+ *
+ * Return: returns 0 for failure
  */
 int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+
+	if ((c >= 'A') && (c <= 'Z'))
 	{
-		putchar(c);
 		return (1);
 	}
 	else
