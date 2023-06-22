@@ -10,6 +10,7 @@ void print_alphabet(void)
 		_putchar(lower[i]);
 	}
 	_putchar('\n');
+}
 
 /**
  * main - Entry point of the program
