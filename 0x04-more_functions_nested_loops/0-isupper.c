@@ -23,4 +23,5 @@ int _isupper(int c)
 	{
 		return (0);
 	}
+	putchar('\n');
 }
