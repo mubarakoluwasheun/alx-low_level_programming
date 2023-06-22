@@ -12,12 +12,11 @@ void print_alphabet(void);
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; lower[i] != '\0'; i++)
 	{
 		_putchar(lower[i]);
 	}
 	_putchar('\n');
-	return (0);
 }
 
 int main()
