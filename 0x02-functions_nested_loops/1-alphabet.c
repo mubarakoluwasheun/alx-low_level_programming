@@ -20,8 +20,6 @@ void print_alphabet(void)
  -*/
 #include "main.h"
 
-void print_alphabet(void);
-
 int main (void)
 {
 	print_alphabet();
