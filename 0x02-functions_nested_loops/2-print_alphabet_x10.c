@@ -3,7 +3,7 @@
 /**
  * print_alphabet - A function that prints 10× alphabet in >
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
