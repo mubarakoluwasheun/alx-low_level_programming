@@ -1,5 +1,3 @@
-#include "main.h"
-
 void print_alphabet(void)
 {
 	char lower[] = "abcdefghijklmnopqrstuvwxyz";
@@ -19,7 +17,9 @@ void print_alphabet(void)
  * Function print alphabet - prints lowercase alphabets
  *
  * Return: Always 0 (Success)
- */
+ -*/
+#include "main.h"
+
 void print_alphabet(void);
 
 int main (void)
