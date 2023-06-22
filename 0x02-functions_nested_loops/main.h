@@ -1,10 +1,18 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- * Prints the lowercase alphabet a to z
- */
-void print_alphabet(void);
+void print_alphabet(void)
+{
+	char lower[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	for (i = 0; lower[i] != '\0'; i++)
+	{
+		 _putchar(lower[i]);
+	}
+	_putchar('\n');
+}
+
 int _putchar(char c);
 
 #endif
