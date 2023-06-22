@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * _isupper - Check if input is uppercase
  *
  * Desription - The program prints the alphabet in uppercase using putchar
  *
