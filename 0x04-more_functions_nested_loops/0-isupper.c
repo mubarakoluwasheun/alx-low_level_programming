@@ -6,11 +6,9 @@
  *
  * Desription - The program prints the alphabet in uppercase using putchar
  *
- * @c - The constant variable
+ * @c: The input alphabet
  *
- * Return: returns 1 for Success
- *
- * Return: returns 0 for failure
+ * Return: returns 1 for Success or 0 for failure
  */
 int _isupper(int c)
 {
