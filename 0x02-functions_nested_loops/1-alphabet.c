@@ -1,5 +1,16 @@
 #include "main.h"
 
+void print_alphabet(void)
+{
+	char lower[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+        for (i = 0; lower[i] != '\0'; i++)
+	{
+		_putchar(lower[i]);
+	}
+	_putchar('\n');
+
 /**
  * main - Entry point of the program
  *
