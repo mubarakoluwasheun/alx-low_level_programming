@@ -7,16 +7,16 @@
 int main(void)
 {
 /**	int i;
-
+ */
 	printf("Infinite loop incoming :(\n");
 
-	i = 0;
+/**	i = 0;
 
 	while (i < 10)
 	{
 		putchar(i); This statment causes the infinite loop
- */	}
-
+	}
+ */
 	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
