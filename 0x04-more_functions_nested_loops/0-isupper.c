@@ -4,7 +4,9 @@
 /**
  * main - Entry point of the program
  *
- * Desription - The program prints the alphabet in lowercase using putcha>
+ * Desription - The program prints the alphabet in uppercase using putchar
+ *
+ * @c - The constant variable
  *
  * Return: Always 0 (Success)
  */
@@ -19,5 +21,4 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	_putchar('\n');
 }
