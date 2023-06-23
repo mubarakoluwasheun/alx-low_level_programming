@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - code implementation starts here
@@ -7,6 +7,7 @@
  *
  * Return: always 0 (Success)
  */
+
 int main(void)
 {
 	int i;

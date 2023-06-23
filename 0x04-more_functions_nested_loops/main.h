@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
+
 void print_square(int size);
 
 void print_diagonal(int n);
