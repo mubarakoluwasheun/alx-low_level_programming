@@ -6,7 +6,7 @@
  *
  * Description - print symbol using _putchar
  *
- * @n: the if condition variable 
+ * @n: the if condition variable
  *
  * Return: no return value
  */
