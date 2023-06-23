@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * mul - multiply two integers
+ * mul:  multiply two integers
  *
  * Description - print the multiples of integers
  *
+ * _putchar: display the output
  * @a: first input digit
  * @b: second input digit
  * multiple: a constant variable
