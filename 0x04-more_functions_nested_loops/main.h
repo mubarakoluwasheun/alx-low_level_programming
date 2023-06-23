@@ -3,8 +3,8 @@
 
 int _isdigit(int c);
 
-int _isupper(int b);
+int _isupper(int c);
 
-int _putchar(char a);
+int _putchar(char c);
 
 #endif
