@@ -10,7 +10,7 @@
  * Return: return 0 (Success)
  */
 
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int i;
 
@@ -23,5 +23,4 @@ void print_most_numbers(void);
 		_putchar('0' + i);
 	}
 	_putchar('\n');
-	return (0);
 }
