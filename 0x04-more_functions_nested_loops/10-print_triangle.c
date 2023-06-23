@@ -11,7 +11,7 @@
  * Return: no return value
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i;
 	int j;
@@ -20,9 +20,9 @@ void print_square(int size)
 	{
 		_putchar('\n');
 	}
-	for (i = 0; i < size; i++)
+	for (i = 0; i <= size; i++)
 	{
-		for (j = 0; j < size; j++)
+		for (j = 0; j <= i; j++)
 		{
 			_putchar('#');
 		}
