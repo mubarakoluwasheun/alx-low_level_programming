@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * mul:  multiply two integers
+ * Mul - multiply two integers
  *
  * Description - print the multiples of integers
  *
- * _putchar: display the output
+ * _putchar - display the output
  * @a: first input digit
  * @b: second input digit
  * multiple: a constant variable
@@ -15,6 +15,7 @@
  *
  * Return: returns 0 (Success)
  */
+
 int mul(int a, int b)
 {
 	long long int multiple;
