@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_line - print the symbol \
+ * print_diagonal - print the symbol \
  *
  * Description - print symbol using _putchar
  *
