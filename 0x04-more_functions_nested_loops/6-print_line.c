@@ -6,6 +6,8 @@
  *
  * Description - print symbol using _putchar
  *
+ * @n: the if condition variable
+ *
  * Return: no return value
  */
 
@@ -18,6 +20,7 @@ void print_line(int n)
 	else
 	{
 		int i;
+
 		for (i = 0; i < n; i++)
 		{
 			_putchar('_');
