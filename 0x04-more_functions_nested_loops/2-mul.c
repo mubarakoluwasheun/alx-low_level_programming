@@ -22,12 +22,12 @@ int mul(int a, int b)
 	if (multiple == 0)
 	{
 		_putchar('0');
-		return;
+		return (0);
 	}
 	if (multiple < 0)
 	{
 		_putchar('-');
-		product = -product;
+		multiple = -multiple;
 	}
 	int digits[20];
 	int numDigits = 0;
@@ -43,5 +43,5 @@ int mul(int a, int b)
 	{
 		_putchar('0' + digits[i]);
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
