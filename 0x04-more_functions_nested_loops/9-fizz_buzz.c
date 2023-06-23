@@ -7,7 +7,6 @@
  *
  * Return: always 0 (Success)
  */
-
 int main(void)
 {
 	int i;
@@ -31,7 +30,5 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
-
-	printf("\n");
-	return (0);
+	printf("\n")
 }
