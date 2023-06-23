@@ -11,7 +11,7 @@
  * Return: no return value
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
