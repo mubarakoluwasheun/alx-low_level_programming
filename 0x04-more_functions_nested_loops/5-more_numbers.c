@@ -6,8 +6,6 @@
  *
  * Description - print integers using _putchar
  *
- *
- * Return: return 0 (Success)
  */
 
 void more_numbers(void)
