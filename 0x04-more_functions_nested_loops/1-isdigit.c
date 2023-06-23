@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
  * _isdigit - Check if input is a digit
  *
