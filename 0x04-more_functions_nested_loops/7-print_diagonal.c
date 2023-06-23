@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_line - print integers 0 to 14 10 times
+ * print_line - print the symbol \
  *
  * Description - print integers using _putchar
  *
@@ -20,7 +20,7 @@ void print_line(int n)
 	}
 	for (i = 0; i < n; i++)
 	{
-		_putchar('_');
+		_putchar('\\');
 	}
 	_putchar('\n');
 }
