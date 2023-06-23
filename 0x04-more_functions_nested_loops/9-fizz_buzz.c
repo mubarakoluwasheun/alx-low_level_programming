@@ -25,10 +25,9 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else
+		else if
 		{
-			printf("%d ", i);
-			printf("\n");
+			printf("%d \n", i);
 		}
 	}
 	return (0);
