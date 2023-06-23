@@ -6,12 +6,12 @@
  *
  * Description - print integers using _putchar
  *
+ * Return: no return value
  */
 
 void more_numbers(void)
 {
 	int i;
-
 	int j;
 
 	for (i = 0; i <= 9; i++)
