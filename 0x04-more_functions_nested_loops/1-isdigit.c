@@ -10,14 +10,13 @@
  */
 int _isdigit(int c)
 {
-	for (i = '0'; i <= '9'; i++)
+	if (c >= '0' && c <= '9')
 	{
-		if (c == i)
-		{
-			return (1);
-		}
-
+		return (1);
+	}
+	else
+	{
+	return (0);
 	}
 	_putchar('\n');
-	return (0);
 }
