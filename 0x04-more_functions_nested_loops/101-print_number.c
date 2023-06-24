@@ -12,6 +12,10 @@
 
 void print_number(int n)
 {
+	int magnitude = 1;
+	magnitude /= 10;
+	int temp = n;
+
 	if (n < 0)
 	{
 		_putchar('-');
@@ -23,16 +27,11 @@ void print_number(int n)
 		_putchar('0');
 	}
 
-	 int magnitude = 1;
-	 int temp = n;
-
 	while (temp > 0)
 	{
 		magnitude *= 10;
 		temp /= 10;
 	}
-
-	magnitude /= 10;
 
 	while (magnitude > 0)
 	{
