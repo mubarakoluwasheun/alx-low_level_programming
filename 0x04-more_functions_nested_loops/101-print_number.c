@@ -6,7 +6,7 @@
  *
  * @n: the input variable
  * @temp: a variable
- * @magnitude: the variavke size
+ * @magnitude: the variable size
  *
  */
 
@@ -14,6 +14,7 @@ void print_number(int n)
 {
 	int magnitude = 1;
 	int temp = n;
+	int digit;
 
 	if (n < 0)
 	{
@@ -34,7 +35,7 @@ void print_number(int n)
 
 	while (magnitude > 0)
 	{
-		int digit = n / magnitude;
+		digit = n / magnitude;
 		_putchar('0' + digit);
 		n -= digit * magnitude;
 		magnitude /= 10;
