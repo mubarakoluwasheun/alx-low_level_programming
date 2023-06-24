@@ -9,8 +9,6 @@
  *
  * @number: the input number
  *
- * @largestPrimeFactor: the variable that holds factor of number
- *
  * Return: returns result
  */
 
