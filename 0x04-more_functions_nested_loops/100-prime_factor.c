@@ -14,10 +14,10 @@
  * Return: returns result
  */
 
-int largestPrime(int number)
+long largestPrime(long number)
 {
-	int largestPrimeFactor = -1;
-	int i;
+	long largestPrimeFactor = -1;
+	long i;
 
 	while (number % 2 == 0)
 	{
@@ -43,10 +43,10 @@ int largestPrime(int number)
 
 int main(void)
 {
-	int number = 612852475143;
-	int largestPrimeFactor = largestPrime(number);
+	long number = 612852475143;
+	long largestPrimeFactor = largestPrime(number);
 
-	printf("%d\n", largestPrimeFactor);
+	printf("%ld\n", largestPrimeFactor);
 
 	return (0);
 }

@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int largestPrime(int number);
+long largestPrime(long number);
 
 void print_triangle(int size);
 
