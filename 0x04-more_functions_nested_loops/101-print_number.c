@@ -15,18 +15,10 @@ void print_number(int n)
 		n = -n;
 	}
 
-	int divisor = 1;
-	int temp = n;
+	if (n / 10 != 0)
+	{
+		print_number(n / 10);
+	}
 
-	while (temp / 10 != 0)
-	{
-		divisor *= 10;
-		temp /= 10;
-	}
-	while (divisor != 0)
-	{
-		_putchar('0' + (n / divisor));
-		n %= divisor;
-		divisor /= 10;
-	}
+	_putchar('0' + (n / 10));
 }
