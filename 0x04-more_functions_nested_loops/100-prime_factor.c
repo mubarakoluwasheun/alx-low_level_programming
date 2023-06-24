@@ -3,8 +3,6 @@
 #include <math.h>
 
 /**
- * main - implementation of the code starts here
- *
  * largestPrime - a function that prints the largest prime
  *
  * Description - print prime factor of a certain mumber
