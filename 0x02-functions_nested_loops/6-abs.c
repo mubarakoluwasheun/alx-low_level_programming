@@ -3,19 +3,19 @@
 /**
  * _abs - A function that prints the absolute value
  *
- * @n: the parameter of the _abs function
+ * @num: the parameter of the _abs function
  *
  * Return:  returns absolute value
  */
 
-int _abs(int)
+int _abs(int num)
 {
-	if (n < 0)
+	if (num < 0)
 	{
-		return (-n);
+		return (-num);
 	}
 	else
 	{
-		return (n);
+		return (num);
 	}
 }
