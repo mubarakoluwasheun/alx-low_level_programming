@@ -5,11 +5,13 @@
 /**
  * main - implementation of the code starts here
  *
+ * largestPrime - a function that prints the largest prime
+ *
  * Description - print prime factor of a certain mumber
  *
  * @number: the input number
  *
- * @factor: the variable that holds factor of number
+ * @largestPrimeFactor: the variable that holds factor of number
  *
  * Return: returns result
  */
