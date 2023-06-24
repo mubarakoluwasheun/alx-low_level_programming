@@ -3,50 +3,53 @@
 #include <math.h>
 
 /**
- * main - code implementation starts here
- *
- * @largestPrime - a function that prints
+ * largestPrime - a function that prints the largest prime
  *
  * Description - print prime factor of a certain mumber
  *
  * @number: the input number
- * @lPrimeFactor: variable that holds number
+ * @lFactor: variable that holds number
  * Return: returns result
  */
 
 long largestPrime(long number)
 {
-	long lPrimeFactor = -1;
+	long lFactor = -1;
 	long i;
 
 	while (number % 2 == 0)
 	{
-		lPrimeFactor = 2;
+		lFactor = 2;
 		number /= 2;
 	}
 	for (i = 3; i <= sqrt(number); i += 2)
 	{
 		while (number % i == 0)
 		{
-			lPrimeFactor = i;
+			lFactor = i;
 			number /= i;
 		}
 	}
 	if (number > 1)
 	{
-		lPrimeFactor = number;
+		lFactor = number;
 	}
 
-	return (lPrimeFactor);
+	return (lFactor);
 }
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
 	long number = 612852475143;
-	long lPrimeFactor = largestPrime(number);
+	long lFactor = largestPrime(number);
 
-	printf("%ld\n", lPrimeFactor);
+	printf("%ld\n", lFactor);
 
 	return (0);
 }
