@@ -10,43 +10,43 @@
  * Description - print prime factor of a certain mumber
  *
  * @number: the input number
- *
+ * @lPrimeFactor: variable that holds the largest prime factor
  * Return: returns result
  */
 
 long largestPrime(long number)
 {
-	long largestPrimeFactor = -1;
+	long lPrimeFactor = -1;
 	long i;
 
 	while (number % 2 == 0)
 	{
-		largestPrimeFactor = 2;
+		lPrimeFactor = 2;
 		number /= 2;
 	}
 	for (i = 3; i <= sqrt(number); i += 2)
 	{
 		while (number % i == 0)
 		{
-			largestPrimeFactor = i;
+			lPrimeFactor = i;
 			number /= i;
 		}
 	}
 	if (number > 1)
 	{
-		largestPrimeFactor = number;
+		lPrimeFactor = number;
 	}
 
-	return (largestPrimeFactor);
+	return (lPrimeFactor);
 }
 
 
 int main(void)
 {
 	long number = 612852475143;
-	long largestPrimeFactor = largestPrime(number);
+	long lPrimeFactor = largestPrime(number);
 
-	printf("%ld\n", largestPrimeFactor);
+	printf("%ld\n", lPrimeFactor);
 
 	return (0);
 }
