@@ -13,7 +13,6 @@
 void print_number(int n)
 {
 	int magnitude = 1;
-	magnitude /= 10;
 	int temp = n;
 
 	if (n < 0)
