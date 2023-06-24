@@ -13,9 +13,9 @@
  * Return: returns result
  */
 
-long long largestPrime(long long number)
+int largestPrime(int number)
 {
-	long long factor = 2;
+	int factor = 2;
 
 	while (number > 1)
 	{
@@ -34,8 +34,8 @@ long long largestPrime(long long number)
 
 int main(void)
 {
-	long long number = 612852475143;
-	long long largestPrimeFactor = largestPrime(number);
+	int number = 612852475143;
+	int largestPrimeFactor = largestPrime(number);
 
 	printf("%lld\n", largestPrimeFactor);
 
