@@ -8,7 +8,7 @@
  * Return: no return value
  */
 
-void natural_num()
+int natural_num()
 {
 	int n;
 	int sum = 0;
