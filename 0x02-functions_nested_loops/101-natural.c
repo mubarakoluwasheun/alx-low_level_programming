@@ -8,9 +8,8 @@
  * Return: no return value
  */
 
-int natural_num()
+int natural_num(int n)
 {
-	int n;
 	int sum = 0;
 
 	for (n = 0; n <= 1023; n++)
