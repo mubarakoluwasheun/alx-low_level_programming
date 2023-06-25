@@ -6,7 +6,9 @@
  * Return:  returns result
  */
 
-int add(int, int);
+int add(int, int)
 {
-	return (a + b);
+	int result = a + b;
+
+	return (result);
 }
