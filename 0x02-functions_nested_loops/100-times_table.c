@@ -27,7 +27,7 @@ void print_times_table(int n)
 			product = i * j;
 			if (j == 0)
 			{
-				printf("%2d", product);
+				printf("%d", product);
 			}
 			else if (j == n)
 			{
