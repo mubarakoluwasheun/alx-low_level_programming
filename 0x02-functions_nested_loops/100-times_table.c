@@ -15,10 +15,11 @@ void print_times_table(int n)
 	int i;
 	int j;
 	int result;
+	int failure = "nul";
 
 	if (n > 15 || n < 0)
 	{
-		break
+		return (failure);
 	}
 	for (i = 0; i <= n; i++)
 	{
