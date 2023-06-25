@@ -17,6 +17,7 @@ int natural_num(int n)
 		if (n % 3 == 0 || n % 5 == 0)
 		{
 			sum += n;
+			return (sum);
 		}
 	}
 	printf("%d\n", sum);
