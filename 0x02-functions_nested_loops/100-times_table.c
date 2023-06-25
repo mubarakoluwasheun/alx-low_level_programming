@@ -20,7 +20,7 @@ void print_times_table(int n)
 	{
 		return;
 	}
-	if (n == 0)
+	if (n = 0)
 	{
 		printf("\n");
 	}
