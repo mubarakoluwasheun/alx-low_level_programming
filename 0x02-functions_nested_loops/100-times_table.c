@@ -31,11 +31,11 @@ void print_times_table(int n)
 			}
 			else if (j == n)
 			{
-				printf(", %2d\n", product);
+				printf(", %3d\n", product);
 			}
 			else
 			{
-				printf(", %2d", product);
+				printf(", %3d", product);
 			}
 		}
 	}
