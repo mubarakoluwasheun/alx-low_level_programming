@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void natural_num(int n);
+void natural_num();
 
 void print_times_table(int n);
 
