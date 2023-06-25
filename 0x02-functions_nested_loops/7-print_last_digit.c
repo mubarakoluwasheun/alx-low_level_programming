@@ -7,9 +7,6 @@
  * @num: the parameter of the print_last_digit
  *       function
  *
- * @absoluteNum: the absolute number variable
- * @lastDigit: the last digit return variable
- *
  * Return:  returns last digit
  */
 
@@ -23,7 +20,6 @@ int print_last_digit(int num)
 	lastDigit = absoluteNum % 10;
 
 	_putchar('0' + lastDigit);
-	_putchar('\n');
 
 	return (lastDigit);
 }
