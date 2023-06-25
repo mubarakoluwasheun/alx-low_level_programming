@@ -25,13 +25,17 @@ void print_times_table(int n)
 		for (j = 0; j <= n; j++)
 		{
 			product = i * j;
-			if (j == n)
+			if (j == 0)
 			{
-				printf("%2d\n", product);
+				printf("%2d", product);
+			}
+			else if (j == n)
+			{
+				printf(", %2d\n", product);
 			}
 			else
 			{
-				printf("%2d, ", product);
+				printf(", %2d", product);
 			}
 		}
 	}
