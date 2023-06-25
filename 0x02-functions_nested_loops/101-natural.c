@@ -5,12 +5,10 @@
  * natural_num - A function that sum the
  *	         multiples of both 5 and 3
  *
- * @n: the parameter of the function
- *
  * Return: no return value
  */
 
-void natural_num(int n)
+void natural_num()
 {
 	int sum = 0;
 
