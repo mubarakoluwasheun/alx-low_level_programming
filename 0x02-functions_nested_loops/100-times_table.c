@@ -7,7 +7,7 @@
  *
  * @n: the parameter of the times table function
  *
- * Return: no return value
+ * Return: returns value 0 as failure
  */
 
 void print_times_table(int n)
@@ -15,11 +15,10 @@ void print_times_table(int n)
 	int i;
 	int j;
 	int result;
-	int failure = "nul";
 
 	if (n > 15 || n < 0)
 	{
-		return (failure);
+		return (0);
 	}
 	for (i = 0; i <= n; i++)
 	{
