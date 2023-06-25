@@ -20,6 +20,10 @@ void print_times_table(int n)
 	{
 		return;
 	}
+	if (n == 0)
+	{
+		printf("%d\n", n);
+	}
 	for (i = 0; i <= n; i++)
 	{
 		for (j = 0; j <= n; j++)
@@ -28,7 +32,6 @@ void print_times_table(int n)
 			if (j == 0)
 			{
 				printf("%d", product);
-				printf("\n");
 			}
 			else if (j == n)
 			{
