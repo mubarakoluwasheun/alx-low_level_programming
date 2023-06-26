@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -7,7 +6,7 @@
  *
  * Return: no return value
  */
-int natural_num(int n)
+int main(int n)
 {
 	int sum = 0;
 
