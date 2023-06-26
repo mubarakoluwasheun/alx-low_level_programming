@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
+ * reset_to_98 - Entry point of the program
  * Desription - The program takes a pointer
  *		to an int as parameter
  *
@@ -11,5 +11,5 @@
 
 void reset_to_98(int *n)
 {
-	n = 98;
+	*n = 98;
 }
