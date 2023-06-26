@@ -6,6 +6,7 @@
  *
  * Return: no return value
  */
+
 int main(void)
 {
 	int n;
