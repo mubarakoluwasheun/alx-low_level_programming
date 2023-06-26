@@ -1,11 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-<<<<<<< HEAD
-=======
-int natural_num(int n);
-
->>>>>>> refs/remotes/origin/main
 void print_times_table(int n);
 
 void print_to_98(int n);
