@@ -7,7 +7,6 @@
  *
  * Return: no return value
  */
-
 int natural_num(int n)
 {
 	int sum = 0;
