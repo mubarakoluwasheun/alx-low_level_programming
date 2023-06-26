@@ -1,17 +1,13 @@
 #include <stdio.h>
 
 /**
- * natural_num - A function that sum the
- *	         multiples of both 5 and 3
+ * main - A function that sum the
+ *        multiples of both 5 and 3
  *
  * Return: no return value
  */
 
-<<<<<<< HEAD
-int main()
-=======
-int natural_num(int n)
->>>>>>> refs/remotes/origin/main
+int main(void)
 {
 	int n;
 	int sum = 0;
