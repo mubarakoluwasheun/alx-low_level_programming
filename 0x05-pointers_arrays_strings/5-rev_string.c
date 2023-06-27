@@ -23,7 +23,7 @@ void rev_string(char *s)
 	}
 	while (start < end)
 	{
-		swap = s[start);
+		swap = s[start];
 		s[start] = s[end];
 		s[end] = swap;
 
