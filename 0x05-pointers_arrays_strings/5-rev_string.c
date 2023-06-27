@@ -15,12 +15,12 @@ void rev_string(char *s)
 	int start = 0;
 	int end = 0;
 	char swap;
-	end = len - 1;
 
 	while (s[len] != '\0')
 	{
 		len++;
 	}
+	end = len - 1;
 	while (start < end)
 	{
 		swap = s[start];
