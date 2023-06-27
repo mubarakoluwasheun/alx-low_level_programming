@@ -7,15 +7,14 @@
  *		of an array of integers,
  *		followed by a new line.
  *
- * @*dest: the parameter of the function
- * @*src: the parameter of the function
+ * @dest: the parameter of the function
+ * @src: the parameter of the function
  * Return: Always 0 (Success)
  */
 
 char *_strcpy(char *dest, char *src)
 {
 	char *dest_ptr = dest;
-	*dest_ptr = '\0';
 
 	while (*src != '\0')
 	{
@@ -23,5 +22,7 @@ char *_strcpy(char *dest, char *src)
 		dest_ptr++;
 		src++;
 	}
-	return dest;
+	*dest_ptr = '\0';
+
+	return (dest);
 }
