@@ -14,15 +14,15 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	*dest = '\0';
+	*dest_ptr = '\0';
 	char *dest_ptr;
 	dest_ptr  = dest;
 
 	while (*src != '\0')
 	{
-		*dest = *src;
-		dest++;
+		*dest_ptr = *src;
+		dest_ptr++;
 		src++;
 	}
-	return dest_ptr;
+	return dest;
 }
