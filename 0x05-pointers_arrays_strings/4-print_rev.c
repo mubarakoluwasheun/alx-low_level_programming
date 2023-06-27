@@ -3,8 +3,8 @@
 
 /**
  * print_rev - Entry point of the program
- * Desription - The program takes a pointer
- *              to an int as parameter
+ * Desription - The program prints a string
+ *              in reverse, followed by a new line
  *
  * @s: the parameter of the function
  * Return: Always 0 (Success)
