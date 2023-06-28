@@ -27,16 +27,14 @@ char *generate_password()
 	return (password);
 }
 
-int main() {
-    // Generate a password of length 10
-    int length = 10;
-    char* password = generatePassword(length);
+int main()
+{
+	srand(time(NULL));
 
-    // Print the generated password
-    printf("Generated Password: %s\n", password);
+	char *password = generate_password();
+	printf("Generated Password: %s\n", password);
 
-    // Free the dynamically allocated memory
-    free(password);
+	free(password);
 
-    return 0;
+	return 0;
 }
