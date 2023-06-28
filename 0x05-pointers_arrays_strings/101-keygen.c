@@ -11,12 +11,6 @@
  * Return: Always 0 (Success)
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-#define PASSWORD_LENGTH 10
-
 char *generate_password()
 {
 	char *password = malloc((PASSWORD_LENGTH + 1) * sizeof(char));
