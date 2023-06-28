@@ -11,28 +11,28 @@
  * Return: Always 0 (Success)
  */
 
-int _atoi(char* s)
+int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
 	int i = 0;
 
-	while (s[i] == ' ')
+	while (*s == ' ')
 	{
-        	i++;
+        	s++;
 	}
-	if (s[i] == '+' || s[i] == '-')
+	if (*s == '+' || *s == '-')
 	{
-		if (s[i] == '-')
+		if (*s == '-')
 		{
 			sign = -1;
 		}
-		i++;
+		s++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+	while (*s >= '0' && *s <= '9')
 	{
-		result = result * 10 + (s[i] - '0');
-		i++;
+		result = (result * 10 + (*s - '0'));
+		s++;
 	}
 
 	return (result * sign);
