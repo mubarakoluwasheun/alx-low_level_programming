@@ -29,8 +29,8 @@ char *generate_password()
 
 int main()
 {
-	srand(time(NULL));
 	char *password;
+	srand(time(NULL));
 	password = generate_password();
 	printf("Generated Password: %s\n", password);
 
