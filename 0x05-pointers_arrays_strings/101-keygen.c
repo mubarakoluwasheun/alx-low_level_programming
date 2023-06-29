@@ -17,7 +17,6 @@ char *generate_password()
 {
 	char *password = malloc((PASSWORD_LENGTH + 1) * sizeof(char));
 	int i;
-	char input[PASSWORD_LENGTH + 1];
 
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
@@ -36,7 +35,7 @@ int main()
 	printf("Enter the password: ");
 	scanf("%s", input);
 
-	char* password;
+	char *password;
 	password = generate_password();
 
 	printf("Generated Password: %s\n", password);
