@@ -17,6 +17,8 @@ char *generate_password()
 {
 	char *password = malloc((PASSWORD_LENGTH + 1) * sizeof(char));
 	int i;
+	char input[PASSWORD_LENGTH + 1];
+	
 
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
@@ -38,7 +40,6 @@ char *generate_password()
 
 int main()
 {
-	char input[PASSWORD_LENGTH + 1];
 	char *password;
 	srand(time(NULL));
 	password = generate_password();
