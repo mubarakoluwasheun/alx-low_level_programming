@@ -30,13 +30,12 @@ char *generate_password()
 
 int main()
 {
+	char input[PASSWORD_LENGTH + 1];
 	char *password;
 	srand(time(NULL));
 	password = generate_password();
 
 	printf("Generated Password: %s\n", password);
-
-	char input[PASSWORD_LENGTH + 1];
 
 	printf("Enter the password: ");
 	scanf("%s", input);
