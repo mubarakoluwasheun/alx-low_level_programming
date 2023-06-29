@@ -35,10 +35,20 @@ int main()
 
 	printf("Generated Password: %s\n", password);
 
+	char input[PASSWORD_LENGTH + 1];
+
+	printf("Enter the password: ");
+	scanf("%s", input);
+
 	if (strcmp(input, password == 0)
 	{
 		printf("Tada! Congrats\n");
 	}
+	else
+	{
+		printf("Password is incorrect\n");
+	}
+
 	free(password);
 
 	return 0;
