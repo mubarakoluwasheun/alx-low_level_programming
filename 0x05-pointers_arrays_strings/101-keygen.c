@@ -21,16 +21,7 @@ char *generate_password()
 
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
-		 password[i] = rand() % 94 + 33;
-
-		if (strcmp(input, password) != 0)
-		{
-			printf("Tada! Congrats\n");
-		}
-		else
-		{
-			printf("Tada! Congrats\n");
-		}
+		password[i] = rand() % 94 + 33;
 	}
 	password[PASSWORD_LENGTH] = '\0';
 
