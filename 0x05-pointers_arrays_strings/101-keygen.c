@@ -35,10 +35,10 @@ int main()
 	srand(time(NULL));
 	password = generate_password();
 
-	printf("Generated Password: %s\n", password);
-
 	printf("Enter the password: ");
 	scanf("%s", input);
+
+	printf("Generated Password: %s\n", password);
 
 	if (strcmp(input, password) != 0)
 	{
@@ -46,7 +46,7 @@ int main()
 	}
 	else
 	{
-		printf("Password is incorrect\n");
+		printf("Tada! Congrats\n");
 	}
 
 	free(password);
