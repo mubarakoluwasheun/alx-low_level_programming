@@ -36,7 +36,7 @@ int _atoi(char *s)
 	}
 	if (digit_count == 0)
 	{
-		return(0);
+		return (0);
 	}
 	else
 	{
