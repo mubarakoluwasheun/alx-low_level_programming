@@ -40,7 +40,7 @@ int main()
 	printf("Enter the password: ");
 	scanf("%s", input);
 
-	if (strcmp(input, password == 0)
+	if (strcmp(input, password) == 0)
 	{
 		printf("Tada! Congrats\n");
 	}
@@ -51,5 +51,5 @@ int main()
 
 	free(password);
 
-	return 0;
+	return (0);
 }
