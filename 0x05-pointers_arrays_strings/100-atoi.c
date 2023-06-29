@@ -15,23 +15,24 @@ int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
+	int i = 0;
 
-	while (*s == ' ')
+	while (s[i] == ' ' || s[i] == '\t')
 	{
-        	s++;
+        	i++;
 	}
-	if (*s == '+' || *s == '-')
+	if (s[i] == '+' || s[i] == '-')
 	{
-		if (*s == '-')
+		if (s[i] == '-')
 		{
 			sign = -1;
 		}
-		s++;
+		i++;
 	}
-	while (*s >= '0' && *s <= '9')
+	while (s[i] >= '0' && s[i] <= '9')
 	{
-		result = (result * 10 + (*s - '0'));
-		s++;
+		result = result * 10 + (s[i] - '0'));
+		i++;
 	}
 
 	return (result * sign);
