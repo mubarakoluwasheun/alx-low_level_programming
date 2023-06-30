@@ -9,7 +9,7 @@
  * @dest: the first parameter of the function
  * @src: the sscond parameter of the function
  * @n: the third parameter of the function
- * Return: Always 0 (Success)
+ * Return: returns the dest value
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -24,5 +24,5 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = '\0';
 	}
-	return 	(dest);
+	return (dest);
 }
