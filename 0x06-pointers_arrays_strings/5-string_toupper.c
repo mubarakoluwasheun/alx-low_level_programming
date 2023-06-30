@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - Entry point of the program
- * Desription - The program reverses the cntent
+ * Desription - The program reverses the content
  *              of an array or integer
  *
  * @str: the first parameter of the function
@@ -13,7 +13,6 @@
 char *string_toupper(char *str)
 {
 	int i;
-	int temp;
 
 	while (str[i] != '\0')
 	{
