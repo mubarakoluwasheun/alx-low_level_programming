@@ -2,62 +2,44 @@
 #include <stdio.h>
 
 /**
- * string_toupper - Entry point of the program
- * Desription - The program reverses the cntent
- *              of an array or integer
+ * cap_string - Entry point of the program
+ * Desription - The program capitalizes all
+ *              words of a string
  *
  * @str: the first parameter of the function
- * Return: Always 0 (Success)
+ * Return: returns the str value
  */
 
-char *string_toupper(char *str)
+char *cap_string(char *str);
 {
-	int i;
-	int temp;
+	int i = 0;
+	int capFirstWord = 1;
 
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
+			str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
+			str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+			str[i] == '}')
 		{
-			str[i] = str[i] - 'a' + 'A';
+			capFirstWord = 1;
+		}
+		else if (capFirstWord)
+		{
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i] - 'a' + 'A';
+			}
+			capFirstWord = 0;
+		}
+		else
+		{
+			if (str[i] >= 'A' && str[i] <= 'Z')
+			{
+				str[i] = str[i] - 'A' + 'a';
+			}
 		}
 		i++;
 	}
+	return (str);
 }
-
-#include <stdio.h>
-#include <ctype.h>
-
-char* cap_string(char* str) {
-    int i = 0;
-    int capitalizeNext = 1;
-
-    while (str[i] != '\0') {
-        if (isspace(str[i]) || str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '!' ||
-            str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}') {
-            capitalizeNext = 1;
-        }
-        else if (capitalizeNext) {
-            str[i] = toupper(str[i]);
-            capitalizeNext = 0;
-        }
-        else {
-            str[i] = tolower(str[i]);
-        }
-        i++;
-    }
-    return str;
-}
-
-int main() {
-    char str[] = "hello, world! how are you?";
-
-    printf("Original string: %s\n", str);
-
-    char* capitalizedStr = cap_string(str);
-
-    printf("Capitalized string: %s\n", capitalizedStr);
-
-    return 0;
-}
-

@@ -3,8 +3,8 @@
 
 /**
  * string_toupper - Entry point of the program
- * Desription - The program reverses the content
- *              of an array or integer
+ * Desription - The program changes all lowercase
+ *              letters of a string to uppercase
  *
  * @str: the first parameter of the function
  * Return: Always 0 (Success)
@@ -12,7 +12,7 @@
 
 char *string_toupper(char *str)
 {
-	int i = 0;
+	int i;
 
 	while (str[i] != '\0')
 	{
@@ -22,5 +22,4 @@ char *string_toupper(char *str)
 		}
 		i++;
 	}
-	return (str);
 }
