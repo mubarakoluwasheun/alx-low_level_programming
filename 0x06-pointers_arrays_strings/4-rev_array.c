@@ -3,11 +3,11 @@
 
 /**
  * reverse_array - Entry point of the program
- * Desription - The program reverses the cntent
+ * Desription - The program reverses the content
  *              of an array or integer
  *
  * @a: the first parameter of the function
- * @n: the sscond parameter of the function
+ * @n: the second parameter of the function
  * Return: Always 0 (Success)
  */
 
