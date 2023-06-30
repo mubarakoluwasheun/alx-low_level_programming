@@ -11,7 +11,7 @@
  * Return: Always 0 (Success)
  */
 
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i;
 	int temp;
