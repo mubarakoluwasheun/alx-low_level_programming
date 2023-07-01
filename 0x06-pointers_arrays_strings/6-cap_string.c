@@ -21,7 +21,7 @@ char *cap_string(char *str)
 	while (str[i] != '\0')
 	{
 		int isSeparator = 0;
-		int j = 0;
+		int j;
 
 		for (j = 0; sep[j] != '\0'; j++)
 		{
