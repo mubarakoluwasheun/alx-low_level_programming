@@ -20,12 +20,13 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 	{
+		int isSeparator = 0;
+
 		for (j = 0; sep[j] != '\0'; j++)
 		{
 			if (str[i] == sep[j])
 			{
 				isSeparator = 1;
-				break;
 			}
 
 		}
