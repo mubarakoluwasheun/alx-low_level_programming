@@ -26,6 +26,7 @@ char *cap_string(char *str)
 			if (str[i] == sep[j])
 			{
 				isSeparator = 1;
+				continue;
 			}
 
 		}
