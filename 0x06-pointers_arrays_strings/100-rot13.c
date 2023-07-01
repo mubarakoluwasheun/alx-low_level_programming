@@ -10,23 +10,30 @@
  * Return: Always 0 (Success)
  */
 
+#include <stdio.h>
+
 char *rot13(char *str)
 {
-	char *p = str;
+	int i, j;
+	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int isletter = 0;
 
-	while (*p != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		int offset = (*p >= 'a' && *p <= 'z') ? 'a' : 'A';
-
-		if ((*p >= 'a' && *p <= 'm') || (*p >= 'A' && *p <= 'M'))
+		for (j = 0; alphabet[j] != '\0'; j++)
 		{
-			*p += 13;
+			if (str[i] == alphabet[j])
+			{
+				str[i] = rot13[j];
+				isLetter = 1;
+				break;
+			}
 		}
-		else if (((*p >= 'n' && *p <= 'z') || (*p >= 'N' && *p <= 'Z'))
+		if (!isLetter)
 		{
-			*p -= 13;
+			continue;
 		}
-		p++;
 	}
 	return (str);
 }
