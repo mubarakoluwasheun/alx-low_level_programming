@@ -16,7 +16,6 @@ char *cap_string(char *str)
 	int j = 0;
 	int capFirstWord = 1;
 	char sep[] = " \t\n,;.!?\"(){}";
-	int isSeparator = 0;
 
 	while (str[i] != '\0')
 	{
