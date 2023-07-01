@@ -15,7 +15,7 @@ char *leet(char *str)
 	int found = 0;
 	char *p = str;
 	char *leetChars = "aAeEoOtTlL";
-	char *leetReplacement = "4433007711";
+	char *leetReplacements = "4433007711";
 
 	while (*p != '\0')
 	{
@@ -23,7 +23,7 @@ char *leet(char *str)
 		{
 			if (*p == leetChars[i])
 			{
-				*p = leetReplacement[i];
+				*p = leetReplacements[i];
 				found = 1;
 			}
 			i++;
