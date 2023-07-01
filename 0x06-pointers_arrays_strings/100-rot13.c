@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
  */
 
-char *rot13(char *)
+char *rot13(char *str)
 {
 	char *p = str;
 
