@@ -23,7 +23,7 @@ char *leet(char *str);
 
 		while (leetChars[i] != '\0')
 		{
-			if (*p == letChars[i])
+			if (*p == leetChars[i])
 			{
 				*p = leetReplacements[i];
 				found = 1;
@@ -41,3 +41,4 @@ char *leet(char *str);
 	}
 	return (str);
 }
+
