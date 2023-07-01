@@ -42,6 +42,17 @@ char *cap_string(char *str)
 			{
 				str[i] = str[i] - 'a' + 'A';
 			}
+			else if (str[i] >= 'A' && str[i] <= 'Z')
+			{
+				if (capWord < 2)
+				{
+					capWord++;
+				}
+				else
+				{
+					str[i] = str[i] + ('a' - 'A');
+				}
+			}
 			capFirstWord = 0;
 		}
 		else
