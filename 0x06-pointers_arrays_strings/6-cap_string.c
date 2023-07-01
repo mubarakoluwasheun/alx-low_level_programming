@@ -12,55 +12,26 @@
 
 char *cap_string(char *str)
 {
-	int i = 0;
-	int capFirstWord = 1;
-	int capWord = 1;
-
+	int i;
+	int j;
 	char sep[] = " \t\n,;.!?\"(){}";
 
 	while (str[i] != '\0')
 	{
-		int isSeparator = 0;
-		int j;
+		if (i == 0 && str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] -= ('a' - 'A');
+		}
 
-		for (j = 0; sep[j] != '\0'; j++)
+		j = 0;
+
+		while (sep[j] != '\0')
 		{
-			if (str[i] == sep[j])
+			if (str[i] == sep[j] && str[i + 1] >= 'a' && str[i + 1] <= 'z')
 			{
-				isSeparator = 1;
-				break;
+				str[i + 1] -= ('a' - 'A');
 			}
-		}
-		if (isSeparator)
-		{
-			capFirstWord = 1;
-			capWord++;
-		}
-		else if (capFirstWord)
-		{
-			if (str[i] >= 'a' && str[i] <= 'z')
-			{
-				str[i] = str[i] - 'a' + 'A';
-			}
-			else if (str[i] >= 'A' && str[i] <= 'Z')
-			{
-				if (capWord < 2)
-				{
-					capWord++;
-				}
-				else
-				{
-					str[i] = str[i] + ('a' - 'A');
-				}
-			}
-			capFirstWord = 0;
-		}
-		else
-		{
-			if (str[i] >= 'A' && str[i] <= 'Z')
-			{
-				str[i] = str[i] + ('a' - 'A');
-			}
+			j++;
 		}
 		i++;
 	}
