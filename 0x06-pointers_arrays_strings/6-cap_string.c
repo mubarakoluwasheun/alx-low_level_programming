@@ -14,6 +14,7 @@ char *cap_string(char *str)
 {
 	int i = 0;
 	int capFirstWord = 1;
+	int wordCount = 0;
 
 	char sep[] = " \t\n,;.!?\"(){}";
 
@@ -33,6 +34,7 @@ char *cap_string(char *str)
 		if (isSeparator)
 		{
 			capFirstWord = 1;
+			wordCount++;
 		}
 		else if (capFirstWord)
 		{
