@@ -13,19 +13,25 @@
 char *cap_string(char *str)
 {
 	int i = 0;
+	int j = 0
 	int capFirstWord = 1;
+	char sep[] = " \t\n,;.!?\"(){}";
+	int is Separatot = 0;
 
 	while (str[i] != '\0')
 	{
-		if (str[i] == ' ' || str[i] == '\t' || str[i] == ',' || str[i] == '.' || str[i] == '\n')
+		for (j = 0; sep[j] != '\0'; j++)
 		{
-			if (str[i] == ';' || str[i] == '!' || str[i] == '?' || str[i] == '"')
+			if (str[i] == sep[j])
 			{
-				else if (str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
-				{
-					capFirstWord = 1;
-				}
+				isSeparator = 1;
+				break;
 			}
+
+		}
+		if (isSeparator)
+		{
+			capFirstWord = 1;
 		}
 		else if (capFirstWord)
 		{
