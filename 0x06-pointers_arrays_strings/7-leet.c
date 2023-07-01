@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * leet - Entry point of the program
@@ -24,7 +23,7 @@ char *leet(char *str)
 		{
 			if (*p == leetChars[i])
 			{
-				*p = leetReplacements[i];
+				*p = leetReplacement[i];
 				found = 1;
 			}
 			i++;
