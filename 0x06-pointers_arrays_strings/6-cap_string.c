@@ -10,7 +10,7 @@
  * Return: returns the str value
  */
 
-char *cap_string(char *str);
+char *cap_string(char *str)
 {
 	int i = 0;
 	int capFirstWord = 1;
