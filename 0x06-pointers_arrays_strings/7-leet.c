@@ -3,24 +3,23 @@
 
 /**
  * leet - Entry point of the program
- * Desription - The program changes all lowercase
- *              letters of a string to uppercase
+ * Desription - The program encodes a
+ *              string into 1337
  *
  * @str: the first parameter of the function
  * Return: Always 0 (Success)
  */
 
-char *leet(char *str);
+char *leet(char *str)
 {
+	int i = 0;
+	int found = 0;
 	char *p = str;
 	char *leetChars = "aAeEoOtTlL";
-	char *leetReplacement = "4330711";
+	char *leetReplacement = "4433007711";
 
 	while (*p != '\0')
 	{
-		int i = 0;
-		int found = 0;
-
 		while (leetChars[i] != '\0')
 		{
 			if (*p == leetChars[i])
@@ -41,4 +40,3 @@ char *leet(char *str);
 	}
 	return (str);
 }
-
