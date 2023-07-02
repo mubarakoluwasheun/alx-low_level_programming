@@ -21,9 +21,9 @@ char *rot13(char *str)
 
 		while (alphabet[j] != '\0')
 		{
-			if (str[i] == alphabet[j])
+			if (str[i] == rot13[j])
 			{
-				str[i] = rot13[j];
+				str[i] = alphabet[j];
 			}
 			j++;
 		}
@@ -31,4 +31,3 @@ char *rot13(char *str)
 	}
 	return (str);
 }
-
