@@ -9,21 +9,25 @@
  * Return: Always 0 (Success)
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int i = 0;
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char r[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if ((str[i] >= 'A' && str[i] <= 'M') || (str[i] >= 'a' && str[i] <= 'm'))
+		int j = 0;
+
+		while (a[j] != '\0')
 		{
-			str[i] += 13;
+			if (s[i] == a[j]
+			{
+				s[i] == r[j];
+			}
+			i++;
 		}
-		else if ((str[i] >= 'N' && str[i] <= 'Z') || (str[i] >= 'n' && str[i] <= 'z'))
-		{
-			str[i] -= 13;
-		}
-		i++;
+		j++;
 	}
-	return (str);
+	return (s);
 }
