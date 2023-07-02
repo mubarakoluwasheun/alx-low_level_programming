@@ -5,7 +5,7 @@
  * Desription - The program encodes a
  *              string using rot13
  *
- * @str: the first parameter of the function
+ * @s: the first parameter of the function
  * Return: Always 0 (Success)
  */
 
@@ -25,9 +25,9 @@ char *rot13(char *s)
 			{
 				s[i] = r[j];
 			}
-			i++;
+			j++;
 		}
-		j++;
+		i++;
 	}
 	return (s);
 }
