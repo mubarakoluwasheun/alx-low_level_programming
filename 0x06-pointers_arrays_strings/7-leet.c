@@ -23,7 +23,6 @@ char *leet(char *str)
 			if (str[i] == leetChars[j])
 			{
 				str[i] = leetReplacements[j];
-				break;
 			}
 			j++;
 		}
