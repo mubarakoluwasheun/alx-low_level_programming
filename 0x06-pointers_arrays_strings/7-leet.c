@@ -12,7 +12,6 @@
 char *leet(char *str)
 {
 	int i = 0;
-	int found = 0;
 	char *p = str;
 	char *leetChars = "aAeEoOtTlL";
 	char *leetReplacements = "4433007711";
@@ -24,18 +23,10 @@ char *leet(char *str)
 			if (*p == leetChars[i])
 			{
 				*p = leetReplacements[i];
-				found = 1;
 			}
-			i++;
+			i++
 		}
-		if (!found)
-		{
-			p++;
-		}
-		else
-		{
-			p++;
-		}
+		p++;
 	}
 	return (str);
 }
