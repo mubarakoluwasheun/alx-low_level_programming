@@ -18,6 +18,7 @@ char *leet(char *str)
 	while (str[i] != '\0')
 	{
 		int j = 0;
+
 		while (leetChars[j] != '\0')
 		{
 			if (str[i] == leetChars[j])
