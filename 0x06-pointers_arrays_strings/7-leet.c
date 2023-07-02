@@ -13,8 +13,8 @@ char *leet(char *str)
 {
 	int i = 0;
 	int j = 0;
-	char *leetChars = "aAeEoOtTlL";
-	char *leetReplacements = "4433007711";
+	char leetChars[] = "aAeEoOtTlL";
+	char leetReplacements[] = "4433007711";
 
 	while (str[i] != '\0')
 	{
