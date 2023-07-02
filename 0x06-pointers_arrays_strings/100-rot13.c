@@ -14,26 +14,23 @@
 
 char *rot13(char *str)
 {
-	int i, j;
+	int i;
 	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	int isLetter = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-		for (j = 0; alphabet[j] != '\0'; j++)
+		int j;
+
+		while (alphabet[j] != '\0')
 		{
 			if (str[i] == alphabet[j])
 			{
 				str[i] = rot13[j];
-				isLetter = 1;
-				break;
 			}
+			j++;
 		}
-		if (!isLetter)
-		{
-			continue;
-		}
+		i++;
 	}
 	return (str);
 }
