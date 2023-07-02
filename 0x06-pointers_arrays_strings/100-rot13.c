@@ -21,7 +21,7 @@ char *rot13(char *s)
 
 		while (a[j] != '\0')
 		{
-			if (s[i] == a[j]
+			if (s[i] == a[j])
 			{
 				s[i] == r[j];
 			}
