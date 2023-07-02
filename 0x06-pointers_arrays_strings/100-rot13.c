@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * rot13 - Entry point of the program
@@ -9,8 +8,6 @@
  * @str: the first parameter of the function
  * Return: Always 0 (Success)
  */
-
-#include <stdio.h>
 
 char *rot13(char *str)
 {
