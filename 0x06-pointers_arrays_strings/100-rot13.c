@@ -12,8 +12,8 @@
 char *rot13(char *str)
 {
 	int i = 0;
-	char *alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *rot13 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *rot13 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (str[i] != '\0')
 	{
@@ -21,9 +21,9 @@ char *rot13(char *str)
 
 		while (alpha[j] != '\0')
 		{
-			if (str[i] == rot13[j])
+			if (str[i] == alpha[j])
 			{
-				str[i] = alpha[j];
+				str[i] = rot13[j];
 			}
 			j++;
 		}
