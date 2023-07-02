@@ -24,7 +24,7 @@ char *leet(char *str)
 			{
 				*p = leetReplacements[i];
 			}
-			i++
+			i++;
 		}
 		p++;
 	}
