@@ -12,21 +12,22 @@
 char *leet(char *str)
 {
 	int i = 0;
-	char *p = str;
+	int j = 0;
 	char *leetChars = "aAeEoOtTlL";
 	char *leetReplacements = "4433007711";
 
-	while (*p != '\0')
+	while (str[i] != '\0')
 	{
-		while (leetChars[i] != '\0')
+		while (leetChars[j] != '\0')
 		{
-			if (*p == leetChars[i])
+			if (str[i] == leetChars[j])
 			{
-				*p = leetReplacements[i];
+				str[i] = leetReplacements[j];
+				break;
 			}
-			i++;
+			j++;
 		}
-		p++;
+		i++;
 	}
 	return (str);
 }
