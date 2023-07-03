@@ -11,7 +11,7 @@
 int main(void)
 {
 	int i;
-	int n = 4000000
+	int n = 4000000;
 	uint64_t fib1 = 0;
 	uint64_t fib2 = 1;
 	uint64_t fib3;
@@ -36,6 +36,6 @@ int main(void)
 		fib1 = fib2;
 		fib2 = fib3;
 	}
-	printf("%d\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
