@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 /**
  * main - A function that prints the first
@@ -10,16 +11,16 @@ int main(void)
 {
 	int i;
 	int n = 49;
-	unsigned long long fib1 = 1;
-	unsigned long long fib2 = 2;
-	unsigned long long fib3;
+	uint64_t fib1 = 1;
+	uint64_t fib2 = 2;
+	uint64_t fib3;
 
-	printf("%llu, %llu, ", fib1, fib2);
+	printf("%lu, %lu, ", fib1, fib2);
 
 	for (i = 2; i <= n; i++)
 	{
 		fib3 = fib1 + fib2;
-		printf("%llu", fib3);
+		printf("%lu", fib3);
 
 		if (i < n)
 		{
