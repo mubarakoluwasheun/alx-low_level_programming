@@ -19,8 +19,6 @@ int main(void)
 
 	for (i = 2; i <= n; i++)
 	{
-		fib3 = fib1 + fib2;
-
 		if (fib1 % 2 == 0 || fib2 % 2 == 0 || fib3 % 2 == 0)
 		{
 			sum += n;
@@ -29,6 +27,7 @@ int main(void)
 		{
 			break;
 		}
+		fib3 = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = fib3;
 	}
