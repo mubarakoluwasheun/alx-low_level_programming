@@ -18,6 +18,6 @@ int main(void)
 			sum += n;
 		}
 	}
-	_putchar('0' + '\n');
 	return (sum);
+	printf("\n");
 }
