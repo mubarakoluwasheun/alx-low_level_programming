@@ -6,7 +6,7 @@
  *
  * Return: returns sum value
  */
-int main()
+int main(void)
 {
 	int n;
 	int sum = 0;
@@ -19,5 +19,5 @@ int main()
 		}
 	}
 	printf("%d\n", sum);
-	return (sum);
+	return ();
 }
