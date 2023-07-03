@@ -6,8 +6,9 @@
  *
  * Return: no return value
  */
-int main(int n)
+int main()
 {
+	int n;
 	int sum = 0;
 
 	for (n = 0; n <= 1023; n++)
