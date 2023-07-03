@@ -17,15 +17,11 @@ int main(void)
 	uint64_t fib3;
 	uint64_t sum = 0;
 
-	for (i = 2; i <= n; i++)
+	while (fib1 <= n)
 	{
-		if (fib1 % 2 == 0 || fib2 % 2 == 0 || fib3 % 2 == 0)
+		if (fib1 % 2 == 0)
 		{
-			sum += n;
-		}
-		else
-		{
-			break;
+			sum += fib1;
 		}
 		fib3 = fib1 + fib2;
 		fib1 = fib2;
