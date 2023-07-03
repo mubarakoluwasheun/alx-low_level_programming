@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	int i;
-	int n = 50;
+	unsigned int i;
+	int n = 49;
 	int fib1 = 1;
 	int fib2 = 2;
 	unsigned int fib3;
