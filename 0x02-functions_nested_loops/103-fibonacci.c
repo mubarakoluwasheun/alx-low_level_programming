@@ -10,8 +10,7 @@
  */
 int main(void)
 {
-	int i;
-	int n = 4000000;
+	uint64_t n = 4000000;
 	uint64_t fib1 = 0;
 	uint64_t fib2 = 1;
 	uint64_t fib3;
