@@ -29,10 +29,6 @@ int main(void)
 		{
 			break;
 		}
-		if (i < n)
-		{
-			printf(", ");
-		}
 		fib1 = fib2;
 		fib2 = fib3;
 	}
