@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * natural_num - A function that sum the
+ * main - A function that sum the
  *	         multiples of both 5 and 3
  *
  * Return: returns sum value
