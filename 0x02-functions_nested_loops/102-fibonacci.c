@@ -12,7 +12,7 @@ int main(void)
 	int n = 50;
 	int fib1 = 1;
 	int fib2 = 2;
-	int fib3;
+	unsigned int fib3;
 
 	printf("%d, %d, ", fib1, fib2);
 
