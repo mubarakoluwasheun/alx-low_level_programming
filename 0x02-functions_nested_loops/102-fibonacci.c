@@ -9,9 +9,9 @@
 int main(void)
 {
 	unsigned int i;
-	int n = 49;
-	int fib1 = 1;
-	int fib2 = 2;
+	unsigned int n = 49;
+	unsigned int fib1 = 1;
+	unsigned int fib2 = 2;
 	unsigned int fib3;
 
 	printf("%d, %d, ", fib1, fib2);
