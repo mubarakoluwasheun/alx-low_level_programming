@@ -4,7 +4,7 @@
  * natural_num - A function that sum the
  *	         multiples of both 5 and 3
  *
- * Return: no return value
+ * Return: Always 0(success)
  */
 int main()
 {
@@ -20,4 +20,5 @@ int main()
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }
