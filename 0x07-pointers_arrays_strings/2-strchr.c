@@ -7,7 +7,7 @@
  * @s: first(string) parameter of the function
  * @c: second(character) parameter of the function
  *
- * Return: Always 0(success)
+ * Return: returns NULL
  */
 
 char *_strchr(char *s, char c)
