@@ -11,19 +11,26 @@
 
 int _sqrt_recursion(int n)
 {
-	int natSquare = n * n;
+	int natSquare = _sqrt_recursion(n / 2);
 
-	if (natSquare == n)
+	if (n < 0)
+	{
+		return (-1);
+	}
+	else if (n == 0 || n == 1)
 	{
 		return (n);
-	}
-	else if (natSquare > n)
-	{
-		return (_sqrt_recursion(n - 1));
 	}
 
 	else
 	{
-		return (-1);
+		if (natSquare * natSquare == n)
+		{
+			return (natSquare);
+		}
+		else
+		{
+			return (-1);
+		}
 	}
 }
