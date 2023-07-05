@@ -9,7 +9,7 @@
  * Return: returns void
  */
 
-int _strlen_recursion(char *s);
+int _strlen_recursion(char *s)
 {
 	int length = 0;
 	int result = length;
