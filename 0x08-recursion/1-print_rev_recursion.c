@@ -9,7 +9,7 @@
  * Return: returns void
  */
 
-void _print_rev_recursion(char *s);
+void _print_rev_recursion(char *s)
 {
 	int length = 0;
 	int result = length;
