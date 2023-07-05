@@ -11,8 +11,6 @@
 
 int _sqrt_recursion(int n)
 {
-	int natSquare = _sqrt_recursion(n / 2);
-
 	if (n < 0)
 	{
 		return (-1);
@@ -24,6 +22,8 @@ int _sqrt_recursion(int n)
 
 	else
 	{
+		int natSquare = _sqrt_recursion(n / 2);
+
 		if (natSquare * natSquare == n)
 		{
 			return (natSquare);
