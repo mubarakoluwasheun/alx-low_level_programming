@@ -6,7 +6,7 @@
  *
  * @s: first (string) parameter of the function
  *
- * Return: returns void
+ * Return: returns 0(Success)
  */
 
 int _strlen_recursion(char *s)
@@ -18,6 +18,7 @@ int _strlen_recursion(char *s)
 	{
 		length = 0;
 		_putchar ('0' + result);
+		return (0);
 	}
 	length++;
 
