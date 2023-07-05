@@ -19,5 +19,5 @@ void _print_rev_recursion(char *s)
 		return;
 	}
 	_putchar(s[i]);
-	_print_rev_recursion(s[i] + 1);
+	_print_rev_recursion(s + 1);
 }
