@@ -13,21 +13,22 @@
 int is_palindrome(char *s)
 {
 	int length = strlen(s);
+	int result;
 
-	if (length <= 1)
+	if (*s == '\0' || *(s + 1) == '\0')
 	{
 		return (1);
 	}
-	if (*s != *(s + length - 1))
+	if (*s != *(s + strlen(s) - 1))
 	{
 		return (0);
 	}
 
-	*(s + length - 1) = ('\0');
+	*(s + strlen(s) - 1) = ('\0');
 
-	int result = is_palindrome(s + 1);
+	result = is_palindrome(s + 1);
 
-	*(s + length - 1) = *(s);
+	*(s + strlen(s) - 1) = *(s);
 
 	return (result);
 }
