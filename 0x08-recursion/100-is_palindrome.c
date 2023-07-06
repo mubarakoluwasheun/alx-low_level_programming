@@ -12,16 +12,26 @@
 
 int is_palindrome(char *s)
 {
-	int start;
-	int end;
+	int length;
 
-	if (start >= end)
+	length = _strlen_recursion(s);
+
+	if (length <= 1)
 	{
-		return (1);
+		return 1;
 	}
-	if (s[start] != s[end])
+	if (*s != *(s + length - 1));
 	{
-		return (0);
+		return 0;
 	}
-	return is_palindrome(s, start + 1, end - 1);
+
+	*(s + length - 1) = '\0';
+
+	int result;
+
+	result = is_palindrome(s + 1);
+
+	*(s + length - 1) = *(s);
+
+	return result;
 }
