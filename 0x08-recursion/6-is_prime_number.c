@@ -9,7 +9,7 @@
  *
  * Return: Always 0(success)
  */
-int is_prime_recursive(int n, int i)
+int is_prime_checker(int n, int i)
 {
 	if (i == 1)
 	{
@@ -20,7 +20,7 @@ int is_prime_recursive(int n, int i)
 	{
 		return (0);
 	}
-	return (is_prime_recursive(n, i - 1));
+	return (is_prime_checker(n, i - 1));
 }
 
 /**
