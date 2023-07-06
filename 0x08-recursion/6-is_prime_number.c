@@ -37,5 +37,5 @@ int  is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (is_prime_recursive(n, n - 1));
+	return (is_prime_checker(n, n - 1));
 }
