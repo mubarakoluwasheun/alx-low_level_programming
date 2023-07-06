@@ -1,13 +1,10 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - A function that returns the
- *		       length of a string
  * is_palindrome - A function that returns 1 if
  *		   a string is a palindrome of
  *		   0 otherwise
  *
- * @s: first (string) parameter of the strlen
  * @s: first (string) parameter of the palindrome
  * Return: Always 0(success)
  */
