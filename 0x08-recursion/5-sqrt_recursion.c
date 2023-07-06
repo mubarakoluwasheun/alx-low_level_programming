@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
 	{
 		int result = n;
 
-		while (result * result > n))
+		while (result * result > n)
 		{
 			result = (result + n / result) / 2;
 		}
