@@ -12,7 +12,6 @@
 
 int is_palindrome(char *s)
 {
-	int length = strlen(s);
 	int result;
 
 	if (*s == '\0' || *(s + 1) == '\0')
