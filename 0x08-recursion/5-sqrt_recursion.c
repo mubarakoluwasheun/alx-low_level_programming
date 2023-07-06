@@ -22,15 +22,30 @@ int _sqrt_recursion(int n)
 
 	else
 	{
-		int natSquare = _sqrt_recursion(n / 2);
+		int start = 1;
+		int end = n;
+		int result = -1;
 
-		if (natSquare * natSquare == n)
+
+		while (start <= end)
 		{
-			return (natSquare);
+			int mid = (start + end) / 2;
+			int square = mid * mid;
+
+			if (square == n)
+			{
+				return (mid);
+			}
+			else if (square < n)
+			{
+				start = mid + 1;
+				result = mid;
+			}
+			else
+			{
+				end = (mid - 1);
+			}
 		}
-		else
-		{
-			return (-1);
-		}
+		return (result);
 	}
 }
