@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursive - A function that returns the
+ * sqrt_recursive - A function that returns the
  *		     square root of a number
  *
  * @n: input parameter of the function
