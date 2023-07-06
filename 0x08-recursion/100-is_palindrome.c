@@ -12,6 +12,8 @@
 
 int is_palindrome(char *s)
 {
+	int result;
+
 	if (*s == '\0' || *(s + 1) == '\0')
 	{
 		return (1);
@@ -23,9 +25,9 @@ int is_palindrome(char *s)
 
 	*(s + strlen(s) - 1) = ('\0');
 
-	s = is_palindrome(s + 1);
+	result = is_palindrome(s + 1);
 
 	*(s + strlen(s) - 1) = *(s);
 
-	return (s);
+	return (1);
 }
