@@ -24,6 +24,4 @@ int is_palindrome(char *s)
 	*(s + strlen(s) - 1) = ('\0');
 
 	return (is_palindrome(s + 1));
-
-	*(s + strlen(s) - 1) = *(s);
 }
