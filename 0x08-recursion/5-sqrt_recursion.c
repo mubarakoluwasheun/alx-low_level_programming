@@ -9,24 +9,27 @@
  * Return: Always 0(success)
  */
 
+int sqrt_recursive(int n, int guess)
+{
+    if (n < 0)
+    {
+        return -1; // Square root of negative numbers is undefined
+    }
+
+    if (guess * guess == n)
+    {
+        return guess; // Base case: Found the square root
+    }
+
+    if (guess * guess > n)
+    {
+        return sqrt_recursive(n, guess - 1); // Guess was too high, try a lower value
+    }
+
+    return sqrt_recursive(n, guess + 1); // Guess was too low, try a higher value
+}
+
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	else
-	{
-		int result = n;
-
-		while (result * result > n)
-		{
-			result = (result + n / result) / 2;
-		}
-		return (result);
-	}
+    return sqrt_recursive(n, 0);
 }
