@@ -13,6 +13,7 @@
 int is_palindrome(char *s)
 {
 	int length;
+	int result;
 
 	length = _strlen_recursion(s);
 
@@ -20,14 +21,12 @@ int is_palindrome(char *s)
 	{
 		return 1;
 	}
-	if (*s != *(s + length - 1));
+	if (*s != *(s + length - 1))
 	{
 		return 0;
 	}
 
 	*(s + length - 1) = '\0';
-
-	int result;
 
 	result = is_palindrome(s + 1);
 
