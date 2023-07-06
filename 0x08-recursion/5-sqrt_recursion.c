@@ -13,20 +13,20 @@ int sqrt_recursive(int n, int guess)
 {
     if (n < 0)
     {
-        return -1; // Square root of negative numbers is undefined
+        return -1;
     }
 
     if (guess * guess == n)
     {
-        return guess; // Base case: Found the square root
+        return guess;
     }
 
     if (guess * guess > n)
     {
-        return sqrt_recursive(n, guess - 1); // Guess was too high, try a lower value
+        return sqrt_recursive(n, guess - 1);
     }
 
-    return sqrt_recursive(n, guess + 1); // Guess was too low, try a higher value
+    return sqrt_recursive(n, guess + 1);
 }
 
 int _sqrt_recursion(int n)
