@@ -19,32 +19,13 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-
 	else
 	{
-		int start = 1;
-		int end = n;
-		int result = -1;
+		int result = n;
 
-
-		while (start <= end)
+		while (result * result > n))
 		{
-			int mid = (start + end) / 2;
-			int square = mid * mid;
-
-			if (square == n)
-			{
-				return (mid);
-			}
-			else if (square < n)
-			{
-				start = mid + 1;
-				result = mid;
-			}
-			else
-			{
-				end = (mid - 1);
-			}
+			result = (result + n / result) / 2;
 		}
 		return (result);
 	}
