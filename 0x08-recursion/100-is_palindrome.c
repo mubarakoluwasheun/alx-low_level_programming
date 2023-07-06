@@ -25,9 +25,9 @@ int _strlen_recursion(char *s)
 }
 
 /**
- * is_palindrome_checker - A function that returns 1 if
- *			   string is a palindrome or 0
- *			   if otherwise
+ * is_palindrome_checker - A function that checks and
+ *			   returns 1 if string is a
+ *			   palindrome or 0 if otherwise
  *
  * @start: start of string parameter of the palindrome
  * @end: end of string parameter of the palindrome
@@ -38,15 +38,15 @@ int is_palindrome_checker(char *start, char *end)
 {
 	if (start >= end)
 	{
-	return 1;
+	return (1);
 	}
 
 	if (*start != *end)
 	{
-	return 0;
+	return (0);
 	}
 
-	return is_palindrome_checker(start + 1, end - 1);
+	return (is_palindrome_checker(start + 1, end - 1));
 }
 
 /**
