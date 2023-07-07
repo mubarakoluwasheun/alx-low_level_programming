@@ -1,3 +1,5 @@
+!<arch>
+main.c/         1688738259  10335 10335 100600  690       `
 int _putchar(char c);
 
 int _islower(int c);
