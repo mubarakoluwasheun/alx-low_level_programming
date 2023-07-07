@@ -3,7 +3,7 @@
 
 /**
  * print_times_table - A function that print
- *		       the 9 times table
+ *		       the times table
  *
  * @n: the parameter of the times table function
  *
