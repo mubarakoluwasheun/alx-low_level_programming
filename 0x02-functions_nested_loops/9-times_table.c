@@ -25,17 +25,13 @@ void times_table(void)
 			{
 				printf("%d", product);
 			}
-			else if (j == n)
+			else if (j == 9)
 			{
 				printf(", %3d\n", product);
 			}
 			else
 			{
 				printf(", %3d", product);
-			}
-			if (n == 0)
-			{
-				printf("\n");
 			}
 		}
 	}
