@@ -1,11 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * times_table - A function that print
- *		       the 9 times table
- *
- * @n: the parameter of the times table function
+ *		 the 9 times table
  *
  * Return: no return value
  */
