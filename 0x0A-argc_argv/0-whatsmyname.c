@@ -9,7 +9,7 @@
  * Return: Always 0(success)
  */
 
-int main(void argc, char *argv[])
+int main(void *argc, char *argv[])
 {
 	int j = 0;
 
