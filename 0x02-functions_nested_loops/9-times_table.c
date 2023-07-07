@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_times_table - A function that print
+ * times_table - A function that print
  *		       the 9 times table
  *
  * @n: the parameter of the times table function
@@ -10,7 +10,7 @@
  * Return: no return value
  */
 
-void print_times_table(int n)
+void times_table(void);
 {
 	int i;
 	int j;
