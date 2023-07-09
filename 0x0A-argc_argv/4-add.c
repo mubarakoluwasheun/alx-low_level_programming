@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -45,9 +46,10 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		sum += inputNumber;
-	}
 
+		sum += inputNumber;
+
+	}
 	printf("%d\n", sum);
 	return (0);
 }
