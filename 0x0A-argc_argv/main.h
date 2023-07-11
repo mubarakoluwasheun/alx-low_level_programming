@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int centsChange(int argc, int *argv[]);
+int centsChange(int argc, char *argv[]);
 
 int main(int argc, char *argv[]);
 
