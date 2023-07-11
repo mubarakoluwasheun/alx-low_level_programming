@@ -17,7 +17,7 @@ int centsChange(int argc, char *argv[])
 {
 	int i;
 	int n;
-	int cents[5];
+	int cents[5] = {25, 10, 5, 2, 1};
 	int count;
 
 	if (argc != 2)
@@ -34,7 +34,6 @@ int centsChange(int argc, char *argv[])
 		return (0);
 	}
 
-	cents[5] = {25, 10, 5, 2, 1};
 	count = 0;
 
 	for (i = 0; i < 5; i++)
