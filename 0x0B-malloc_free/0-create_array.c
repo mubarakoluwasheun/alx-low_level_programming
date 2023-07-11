@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * create_array - A function that creates an array
@@ -11,7 +12,6 @@
  *
  * Return: 0(success) otherwise (failure)
  */
-
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
