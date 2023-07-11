@@ -13,7 +13,7 @@
  * Return: Always 0(success)
  */
 
-int centsChange(int argc, int *argv[])
+int centsChange(int argc, char *argv[])
 {
 	int i;
 	int n;
