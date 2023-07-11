@@ -12,7 +12,6 @@
  *
  * Return: Always 0(success)
  */
-
 int main(int argc, char *argv[])
 {
 	int i;
@@ -27,7 +26,6 @@ int main(int argc, char *argv[])
 	}
 
 	sum = 0;
-
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
@@ -40,7 +38,6 @@ int main(int argc, char *argv[])
 		}
 
 		inputNumber = atoi(argv[i]);
-
 		if (inputNumber <= 0)
 		{
 			printf("Error\n");
@@ -48,7 +45,6 @@ int main(int argc, char *argv[])
 		}
 
 		sum += inputNumber;
-
 	}
 	printf("%d\n", sum);
 	return (0);
