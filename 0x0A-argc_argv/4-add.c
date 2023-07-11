@@ -22,9 +22,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
-		return (0);
 	}
-
 	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
@@ -36,14 +34,12 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-
 		inputNumber = atoi(argv[i]);
 		if (inputNumber <= 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
-
 		sum += inputNumber;
 	}
 	printf("%d\n", sum);
