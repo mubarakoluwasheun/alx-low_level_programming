@@ -23,7 +23,7 @@ int centsChange(int argc, int *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
 	n = atoi(argv[1]);
@@ -31,7 +31,7 @@ int centsChange(int argc, int *argv[])
 	if (n < 0)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 
 	cents[5] = {25, 10, 5, 2, 1};
@@ -44,11 +44,10 @@ int centsChange(int argc, int *argv[])
 	}
 
 	printf("%d\n", count);
-	return 0;
+	return (0);
 }
 
 int main(int argc, char *argv[])
 {
-	return centsChange(argc, argv);
+	return (centsChange(argc, argv));
 }
-
