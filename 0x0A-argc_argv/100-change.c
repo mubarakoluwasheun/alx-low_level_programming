@@ -18,8 +18,9 @@ int centsChange(int argc, char *argv[])
 	int i;
 	int n;
 	int count;
+	int cents[]
 
-	int cents[5] = {25, 10, 5, 2, 1};
+	*cents [5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -27,7 +28,6 @@ int centsChange(int argc, char *argv[])
 		return (1);
 	}
 	n = atoi(argv[1]);
-
 	if (n < 0)
 	{
 		printf("0\n");
