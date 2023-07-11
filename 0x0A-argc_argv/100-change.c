@@ -10,7 +10,7 @@
  * @argc: first (count) parameter of the function
  * @argv: second (vector) parameter of the function
  *
- * Return: Always 0(success)
+ * Return: 0(success) 1(error)
  */
 
 int centsChange(int argc, char *argv[])
@@ -18,9 +18,7 @@ int centsChange(int argc, char *argv[])
 	int i;
 	int n;
 	int count;
-	int cents[]
-
-	*cents [5] = {25, 10, 5, 2, 1};
+	int cents[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -43,6 +41,15 @@ int centsChange(int argc, char *argv[])
 	printf("%d\n", count);
 	return (0);
 }
+
+/**
+ * main - Entry point of the program
+ *
+ * @argc: Number of command line arguments
+ * @argv: Array of command line arguments
+ *
+ * Return: Always 0(success)
+ */
 
 int main(int argc, char *argv[])
 {
