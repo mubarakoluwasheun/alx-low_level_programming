@@ -8,6 +8,7 @@ char **strtow(char *str)
 	char *token;
 	char **words;
 	int index;
+	int i;
 
     if (str == NULL || strlen(str) == 0)
         return NULL;
@@ -31,6 +32,13 @@ char **strtow(char *str)
     token = strtok(str, " ");
     while (token != NULL) {
         words[index] = strdup(token);
+        if (words[index] == NULL) {
+            for (i = 0; i < index; i++)
+                free(words[i]);
+            free(words);
+            free(str_copy);
+            return NULL;
+	}
         index++;
         token = strtok(NULL, " ");
     }
