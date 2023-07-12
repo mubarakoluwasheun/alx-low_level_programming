@@ -7,7 +7,7 @@
  *	       grid
  *
  * @grid: The address of the two dimensional grid
- * @ height: height of the grid
+ * @height: height of the grid
  *
  * Return: Nothing
  */
