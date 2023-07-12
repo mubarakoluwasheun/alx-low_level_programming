@@ -41,7 +41,10 @@ char **strtow(char *str) {
         if (str[i] != ' ') {
             if (!in_word) {
                 word_length = 0;
-                words[word_index] = (char *)malloc((MAX_WORD_LENGTH + 1) * sizeof(char));
+		while (str[i + word_length] != ' ' && str[i + word_length] != '\0')
+                    word_length++;
+
+                words[word_index] = (char *)malloc((word_length + 1) * sizeof(char));
                 if (words[word_index] == NULL) {
                     for (j = 0; j < word_index; j++)
                         free(words[j]);
