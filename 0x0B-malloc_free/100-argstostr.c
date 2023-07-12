@@ -43,7 +43,7 @@ char *argstostr(int ac, char **av)
 		argLength = strlen(av[i]);
 		strncpy(conCat + currentIndex, av[i], argLength);
 		currentIndex += argLength;
-		conCat[currentIndex] = (' ');
+		conCat[currentIndex] = ('\n');
 		currentIndex++;
 	}
 	conCat[totalLength] = ('\n');
