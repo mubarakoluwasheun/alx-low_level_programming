@@ -25,7 +25,7 @@ char **strtow(char *str) {
             num_words++;
             in_word = 1;
         } else if (str[i] == ' ') {
-            return NULL;
+            in_word = 0;
         }
     }
 
@@ -41,7 +41,7 @@ char **strtow(char *str) {
         if (str[i] != ' ') {
             if (!in_word) {
                 word_length = 0;
-                words[word_index] = (char *)malloc(MAX_WORD_LENGTH * sizeof(char));
+                words[word_index] = (char *)malloc((MAX_WORD_LENGTH + 1) * sizeof(char));
                 if (words[word_index] == NULL) {
                     for (j = 0; j < word_index; j++)
                         free(words[j]);
