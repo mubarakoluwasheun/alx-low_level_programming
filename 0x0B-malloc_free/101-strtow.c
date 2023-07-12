@@ -25,7 +25,7 @@ char **strtow(char *str) {
             num_words++;
             in_word = 1;
         } else if (str[i] == ' ') {
-            return (1);
+            return NULL
         }
     }
 
