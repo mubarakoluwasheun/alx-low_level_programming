@@ -31,7 +31,7 @@ char *argstostr(int ac, char **av)
 		totalLength += strlen(av[i]) + 1;
 	}
 
-	conCat = (char *)malloc(totalLength * sizeof(char));
+	conCat = (char *)malloc((totalLength + 1) * sizeof(char));
 	if (conCat == NULL)
 	{
 		return (NULL);
