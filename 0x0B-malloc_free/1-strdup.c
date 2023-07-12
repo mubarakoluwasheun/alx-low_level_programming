@@ -22,6 +22,7 @@ char *_strdup(char *str)
 	}
 
 	size_t len = strlen(str);
+
 	newString = (char *)malloc((len + 1) * sizeof(char));
 
 	if (newString == NULL)
