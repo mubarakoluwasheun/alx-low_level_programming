@@ -3,20 +3,22 @@
 #include <stdlib.h>
 
 /**
- * _memset - A function that prints a string
- *           follow by a new line
+ * free_grid - A function that frees a 2 dimensional
+ *	       grid
  *
- * @s: first (string) parameter of the function
+ * @grid: The address of the two dimensional grid
+ * @ height: height of the grid
  *
- * Return: Always 0(success)
+ * Return: Nothing
  */
+void free_grid(int **grid, int height)
+{
+	int i;
 
-void free_grid(int **grid, int height) {
-   int i;
+	for (i = 0; i < height; i++)
+	{
+		free(grid[i]);
+	}
 
-    for (i = 0; i < height; i++) {
-        free(grid[i]);
-    }
-
-    free(grid);
+	free(grid);
 }
