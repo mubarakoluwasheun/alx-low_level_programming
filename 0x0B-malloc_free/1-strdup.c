@@ -14,6 +14,7 @@
  */
 char *_strdup(char *str)
 {
+	size_t len;
 	char *newString;
 
 	if (str == NULL)
@@ -21,15 +22,13 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	size_t len = strlen(str);
-
+	len = strlen(str);
 	newString = (char *)malloc((len + 1) * sizeof(char));
 
 	if (newString == NULL)
 	{
 		return (NULL);
 	}
-
 	strcpy(newString, str);
 
 	return (newString);
