@@ -48,5 +48,6 @@ char *argstostr(int ac, char **av)
 	}
 
 	conCat[totalLength - 1] = ('\0');
+	_putchar('0' + '\n');
 	return (conCat);
 }
