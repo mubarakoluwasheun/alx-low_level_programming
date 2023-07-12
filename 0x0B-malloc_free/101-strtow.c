@@ -5,12 +5,20 @@
 #define MAX_WORD_LENGTH 100
 
 char **strtow(char *str) {
+
+	int num_words;
+	int in_word;
+	int i;
+	int j;
+	char **words;
+	int word_index;
+	int word_length;
+
     if (str == NULL || strlen(str) == 0)
         return NULL;
 
-    int num_words = 0;
-    int in_word = 0;
-    int i;
+    num_words = 0;
+    in_word = 0;
 
     for (i = 0; str[i] != '\0'; i++) {
         if (str[i] != ' ' && !in_word) {
@@ -21,12 +29,12 @@ char **strtow(char *str) {
         }
     }
 
-    char **words = (char **)malloc((num_words + 1) * sizeof(char *));
+    words = (char **)malloc((num_words + 1) * sizeof(char *));
     if (words == NULL)
         return NULL;
 
-    int word_index = 0;
-    int word_length = 0;
+    word_index = 0;
+    word_length = 0;
     in_word = 0;
 
     for (i = 0; str[i] != '\0'; i++) {
@@ -35,7 +43,7 @@ char **strtow(char *str) {
                 word_length = 0;
                 words[word_index] = (char *)malloc(MAX_WORD_LENGTH * sizeof(char));
                 if (words[word_index] == NULL) {
-                    for (int j = 0; j < word_index; j++)
+                    for (j = 0; j < word_index; j++)
                         free(words[j]);
                     free(words);
                     return NULL;
