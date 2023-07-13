@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>
 
 /**
  * malloc_checkedD - A function that allocates
@@ -11,19 +10,15 @@
  *
  * Return: returns a pointer to allocated memory
  */
+
 void *malloc_checked(unsigned int b)
 {
-	void *ptr;
+	void *pointer;
 
-	if (b == 0 || b > UINT_MAX)
+	pointer = malloc(b);
+	if (pointer == NULL)
 	{
 		exit(98);
 	}
-
-	ptr = malloc(b);
-	if (ptr == NULL)
-	{
-		exit(98);
-	}
-	return (ptr);
+	return (pointer);
 }
