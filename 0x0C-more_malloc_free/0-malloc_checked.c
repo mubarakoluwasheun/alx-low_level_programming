@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * malloc_checkedD - A function that allocates
+ * malloc_checked - A function that allocates
  *		     memory using malloc
  *
  * @b: number of bytes to allocate
