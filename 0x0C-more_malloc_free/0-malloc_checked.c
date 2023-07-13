@@ -23,9 +23,20 @@ void *malloc_checked(unsigned int b)
 	return (ptr);
 }
 
+/**
+ * main - A function that prints a string
+ *           follow by a new line
+ *
+ * Return: Always 0(success)
+ */
+
 int main() {
-    unsigned int size = 10;
-    int *array = malloc_checked(size * sizeof(int));
+    unsigned int size;
+    int *array;
+
+    size = 10;
+    array = malloc_checked(size * sizeof(int));
+
     free(array);
-    return 0;
+    return (0);
 }
