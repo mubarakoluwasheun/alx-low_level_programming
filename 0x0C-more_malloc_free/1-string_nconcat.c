@@ -12,7 +12,6 @@
  *
  * Return: returns a pointer to allocated memory
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_str;
@@ -20,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 	{
-		s1 = "";
+		s1 = ("");
 	}
 	else
 	{
@@ -31,13 +30,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (s2 == NULL)
 	{
-		s2 = "";
+		s2 = ("");
 	}
 	else
 	{
 		while (s2[len2] && len2 < n)
 		{
-		len2++;
+			len2++;
 		}
 	}
 	new_str = malloc(sizeof(char) * (len1 + len2 + 1));
@@ -55,6 +54,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		new_str[i] = s2[j];
 		i++;
 	}
-	new_str[i] = '\0';
+	new_str[i] = ('\0');
 	return (new_str);
 }
