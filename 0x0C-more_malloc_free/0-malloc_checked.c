@@ -30,13 +30,14 @@ void *malloc_checked(unsigned int b)
  * Return: Always 0(success)
  */
 
-int main() {
-    unsigned int size;
-    int *array;
+int main()
+{
+	unsigned int size;
+	int *array;
 
-    size = 10;
-    array = malloc_checked(size * sizeof(int));
+	size = 10;
+	array = malloc_checked(size * sizeof(int));
 
-    free(array);
-    return (0);
+	free(array);
+	return (0);
 }
