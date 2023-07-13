@@ -12,7 +12,6 @@
  *
  * Return: returns a pointer to allocated memory
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_str;
