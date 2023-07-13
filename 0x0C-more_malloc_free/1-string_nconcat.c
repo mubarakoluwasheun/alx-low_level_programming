@@ -50,9 +50,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		new_str[i] = s1[i];
 	}
-	for (j = 0; j < len2; j++, i++)
+	for (j = 0; j < len2; j++)
 	{
 		new_str[i] = s2[j];
+		i++;
 	}
 	new_str[i] = '\0';
 	return (new_str);
