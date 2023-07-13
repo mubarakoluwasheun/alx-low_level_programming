@@ -4,23 +4,29 @@
 #include <string.h>
 
 /**
- * malloc_checked - A function that allocates
- *		     memory using malloc
+ * _calloc - A function that allocates memory
+ *	     for an array
  *
- * @b: number of bytes to allocate
+ * @nmemb: number of elements in the array
+ * @size: size of each elements in bytes
  *
  * Return: returns a pointer to allocated memory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    void *ptr;
+	void *pointer;
 
-    if (nmemb == 0 || size == 0)
-        return NULL;
-    ptr = malloc(nmemb * size);
-    if (ptr == NULL)
-        return NULL;
-    memset(ptr, 0, nmemb * size);
-    return ptr;
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+
+	ptr = malloc(nmemb * size);
+	if (pointer == NULL)
+	{
+		return (NULL);
+	}
+	memset(pointer, 0, nmemb * size);
+	return (pointer);
 }
