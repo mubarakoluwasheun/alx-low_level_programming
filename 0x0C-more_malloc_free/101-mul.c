@@ -4,10 +4,8 @@
 #include <gmp.h>
 
 /**
- * malloc_checked - A function that allocates
- *		     memory using malloc
- *
- * @b: number of bytes to allocate
+ * print_error - A function that allocates
+ *		     memory using mall
  *
  * Return: returns a pointer to allocated memory
  */
@@ -18,6 +16,15 @@ void print_error(void)
     for (int i = 0; error[i]; i++)
         putchar(error[i]);
 }
+
+/**
+ * main - Implemwntation of the code starts here
+ *
+ * @argc: count agument
+ * @argv: vector argument
+ *
+ * Return: returns pointer
+ */
 
 int main(int argc, char *argv[])
 {
