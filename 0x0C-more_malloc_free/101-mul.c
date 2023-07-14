@@ -1,45 +1,53 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * multiple - A function that multiplies
- *	      two integers
+ * malloc_checked - A function that allocates
+ *		     memory using malloc
  *
- * @argc: count parameter of the function
- * @argv: vector paramter of the function
+ * @b: number of bytes to allocate
  *
- * Return: returns a pointer to result
+ * Return: returns a pointer to allocated memory
  */
 
-int multiple(int argc, char *argv[])
+void print_int(int n)
 {
-	int num1, num2, result;
-	int i;
+    if (n < 0)
+    {
+        _putchar('-');
+        n = -n;
+    }
 
-	if (argc != 3)
-	{
-        printf("Error\n");
+    if (n / 10)
+        print_int(n / 10);
+
+    _putchar(n % 10 + '0');
+}
+
+int main(int argc, char *argv[])
+{
+    int num1, num2, result;
+
+    if (argc != 3)
+    {
+        write(2, "Error\n", 6);
         exit(98);
-	}
+    }
 
     num1 = atoi(argv[1]);
     num2 = atoi(argv[2]);
 
-    for (i = 0; argv[1][i]; i++)
-        if (!isdigit(argv[1][i]))
-        {
-            printf("Error\n");
-            exit(98);
-        }
-
-    for (i = 0; argv[2][i]; i++)
-        if (!isdigit(argv[2][i]))
-        {
-            printf("Error\n");
-            exit(98);
-        }
+    if (num1 <= 0 || num2 <= 0)
+    {
+        write(2, "Error\n", 6);
+        exit(98);
+    }
 
     result = num1 * num2;
-    return (result);
+    print_int(result);
+    _putchar('\n');
+
+    return (0);
 }
