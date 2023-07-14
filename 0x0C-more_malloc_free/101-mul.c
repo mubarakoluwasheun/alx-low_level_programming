@@ -1,26 +1,21 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-/**
- * malloc_checked - A function that allocates
- *		     memory using malloc
- *
- * @b: number of bytes to allocate
- *
- * Return: returns a pointer to allocated memory
- */
-void print_error(void)
+
+void print_error()
 {
     char *error = "Error\n";
-    for (int i = 0; error[i]; i++)
+    int i;
+    for (i = 0; error[i]; i++)
         putchar(error[i]);
 }
 
-void reverse_str(char *str)
+void reverse_str(str)
+char *str;
 {
     int len = strlen(str);
-    for (int i = 0; i < len / 2; i++)
+    int i;
+    for (i = 0; i < len / 2; i++)
     {
         char temp = str[i];
         str[i] = str[len - i - 1];
@@ -28,18 +23,21 @@ void reverse_str(char *str)
     }
 }
 
-char *multiply(char *num1, char *num2)
+char *multiply(num1, num2)
+char *num1;
+char *num2;
 {
     int len1 = strlen(num1);
     int len2 = strlen(num2);
     int len_result = len1 + len2;
     char *result = calloc(len_result + 1, sizeof(char));
+    int i, j;
 
-    for (int i = 0; i < len_result; i++)
+    for (i = 0; i < len_result; i++)
         result[i] = '0';
 
-    for (int i = len1 - 1; i >= 0; i--)
-        for (int j = len2 - 1; j >= 0; j--)
+    for (i = len1 - 1; i >= 0; i--)
+        for (j = len2 - 1; j >= 0; j--)
         {
             int product = (num1[i] - '0') * (num2[j] - '0');
             int sum = (result[i + j + 1] - '0') + product;
@@ -47,7 +45,7 @@ char *multiply(char *num1, char *num2)
             result[i + j] += sum / 10;
         }
 
-    for (int i = 0; result[i]; i++)
+    for (i = 0; result[i]; i++)
         if (result[i] > '9')
         {
             int carry = result[i] - '0';
@@ -62,9 +60,12 @@ char *multiply(char *num1, char *num2)
     return result;
 }
 
-int main(int argc, char *argv[])
+int main(argc, argv)
+int argc;
+char *argv[];
 {
     char *num1, *num2, *result;
+    int i;
 
     if (argc != 3)
     {
@@ -75,14 +76,14 @@ int main(int argc, char *argv[])
     num1 = argv[1];
     num2 = argv[2];
 
-    for (int i = 0; num1[i]; i++)
+    for (i = 0; num1[i]; i++)
         if (num1[i] < '0' || num1[i] > '9')
         {
             print_error();
             exit(98);
         }
 
-    for (int i = 0; num2[i]; i++)
+    for (i = 0; num2[i]; i++)
         if (num2[i] < '0' || num2[i] > '9')
         {
             print_error();
