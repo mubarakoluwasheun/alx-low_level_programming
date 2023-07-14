@@ -1,24 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <gmp.h>
+#include <libbig.h>
 
 void multiply_numbers(const char* num1_str, const char* num2_str, char* result_str) {
-    mpz_t num1, num2, result;
-    mpz_init(num1);
-    mpz_init(num2);
-    mpz_init(result);
+    BigNum num1, num2, result;
+    BigNum_Init(&num1);
+    BigNum_Init(&num2);
+    BigNum_Init(&result);
 
-    mpz_set_str(num1, num1_str, 10);
-    mpz_set_str(num2, num2_str, 10);
+    BigNum_SetDecimal(&num1, num1_str);
+    BigNum_SetDecimal(&num2, num2_str);
 
-    mpz_mul(result, num1, num2);
+    BigNum_Multiply(&result, &num1, &num2);
 
-    mpz_get_str(result_str, 10, result);
+    BigNum_GetDecimal(&result, result_str, sizeof(result_str));
 
-    mpz_clear(num1);
-    mpz_clear(num2);
-    mpz_clear(result);
+    BigNum_Free(&num1);
+    BigNum_Free(&num2);
+    BigNum_Free(&result);
 }
 
 int is_positive_integer(const char* str) {
@@ -43,6 +43,8 @@ int main(int argc, char *argv[]) {
         printf("Error\n");
         return 98;
     }
+
+    char result_str[1024];
 
     multiply_numbers(argv[1], argv[2], result_str);
 
