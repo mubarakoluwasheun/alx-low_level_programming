@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int multiple(int argc, char *argv[]);
+int mul(int argc, char *argv[]);
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 

@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -45,7 +46,7 @@ void print_int(int n)
  * Return: Always 0(success)
  */
 
-int main(int argc, char *argv[])
+int mul(int argc, char *argv[])
 {
     int num1, num2, result;
 
