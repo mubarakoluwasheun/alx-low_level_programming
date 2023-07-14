@@ -1,60 +1,72 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <gmp.h>
+#include <unistd.h>
 
 /**
- * print_error - A function that allocates
- *		     memory using mall
+ * malloc_checked - A putchar function
+ *
+ * @c: parameter of the function
  *
  * Return: returns a pointer to allocated memory
  */
 
-void print_error(void)
+void _putchar(char c)
 {
-	int i;
-
-    char *error = "Error\n";
-    for (i = 0; error[i]; i++)
-        putchar(error[i]);
+    write(1, &c, 1);
 }
 
 /**
- * main - Implemwntation of the code starts here
+ * print_int - A funcion that print int
  *
- * @argc: count agument
- * @argv: vector argument
+ * @n: input of the funxtion
  *
- * Return: returns pointer
+ * Return: Always 0(success)
+ */
+void print_int(int n)
+{
+    if (n < 0)
+    {
+        _putchar('-');
+        n = -n;
+    }
+
+    if (n / 10)
+        print_int(n / 10);
+
+    _putchar(n % 10 + '0');
+}
+
+/**
+ * mul- A function that multiplies two
+ *      integers
+ *
+ * @argc: count parameter of the function
+ * @argv: vector parameter of the function
+ * Return: Always 0(success)
  */
 
 int main(int argc, char *argv[])
 {
-    mpz_t num1, num2, result;
+    int num1, num2, result;
 
     if (argc != 3)
     {
-        print_error();
+        write(2, "Error\n", 6);
         exit(98);
     }
 
-    mpz_init_set_str(num1, argv[1], 10);
-    mpz_init_set_str(num2, argv[2], 10);
-    mpz_init(result);
+    num1 = atoi(argv[1]);
+    num2 = atoi(argv[2]);
 
-    if (mpz_sgn(num1) <= 0 || mpz_sgn(num2) <= 0)
+    if (num1 <= 0 || num2 <= 0)
     {
-        print_error();
+        write(2, "Error\n", 6);
         exit(98);
     }
 
-    mpz_mul(result, num1, num2);
-    mpz_out_str(stdout, 10, result);
-    putchar('\n');
-
-    mpz_clear(num1);
-    mpz_clear(num2);
-    mpz_clear(result);
+    result = num1 * num2;
+    print_int(result);
+    _putchar('\n');
 
     return (0);
 }
