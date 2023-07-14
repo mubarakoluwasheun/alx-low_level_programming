@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * malloc_checked - A function that reallocates
+ * _realloc - A function that reallocates
  *		    memory using malloc and free
  *
  * @ptr: pointer to memory previously allocated
