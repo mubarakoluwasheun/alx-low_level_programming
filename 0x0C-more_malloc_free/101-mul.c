@@ -43,25 +43,49 @@ int is_positive_integer(const char *str)
  *
  * Return: Always 0(success)
  */
+
 int main(int argc, char *argv[])
 {
-	int num1, num2;
-	int result;
+    int *num1, *num2;
+    int *result;
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (98);
-	}
-	if (!is_positive_integer(argv[1]) || !is_positive_integer(argv[2]))
-	{
-		printf("Error\n");
-		return (98);
-	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = multiply_numbers(num1, num2);
-	printf("%d\n", result);
+    num1 = malloc(sizeof(int));
+    num2 = malloc(sizeof(int));
+    result = malloc(sizeof(int));
 
-	return (0);
+    if (num1 == NULL || num2 == NULL || result == NULL)
+    {
+        printf("Error: memory allocation failed\n");
+        free(num1);
+        free(num2);
+        free(result);
+        return (98);
+    }
+
+    if (argc != 3)
+    {
+        printf("Error\n");
+        free(num1);
+        free(num2);
+        free(result);
+        return (98);
+    }
+    if (!is_positive_integer(argv[1]) || !is_positive_integer(argv[2]))
+    {
+        printf("Error\n");
+        free(num1);
+        free(num2);
+        free(result);
+        return (98);
+    }
+    *num1 = atoi(argv[1]);
+    *num2 = atoi(argv[2]);
+    *result = multiply_numbers(*num1, *num2);
+    printf("%d\n", *result);
+
+    free(num1);
+    free(num2);
+    free(result);
+
+    return (0);
 }
