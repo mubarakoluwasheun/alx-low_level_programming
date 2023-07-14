@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <gmp.h>
 
 /**
  * malloc_checked - A function that allocates
@@ -11,30 +12,40 @@
  * Return: returns a pointer to allocated memory
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+void print_error(void)
+{
+    char *error = "Error\n";
+    for (int i = 0; error[i]; i++)
+        putchar(error[i]);
+}
 
 int main(int argc, char *argv[])
 {
-    int num1, num2, result;
+    mpz_t num1, num2, result;
 
     if (argc != 3)
     {
-        printf("Error\n");
-        return (98);
+        print_error();
+        exit(98);
     }
 
-    num1 = atoi(argv[1]);
-    num2 = atoi(argv[2]);
+    mpz_init_set_str(num1, argv[1], 10);
+    mpz_init_set_str(num2, argv[2], 10);
+    mpz_init(result);
 
-    if (num1 <= 0 || num2 <= 0)
+    if (mpz_sgn(num1) <= 0 || mpz_sgn(num2) <= 0)
     {
-        printf("Error\n");
-        return (98);
+        print_error();
+        exit(98);
     }
 
-    result = num1 * num2;
-    printf("%d\n", result);
+    mpz_mul(result, num1, num2);
+    mpz_out_str(stdout, 10, result);
+    putchar('\n');
+
+    mpz_clear(num1);
+    mpz_clear(num2);
+    mpz_clear(result);
 
     return (0);
 }
