@@ -1,38 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <libbig.h>
 
-void multiply_numbers(const char* num1_str, const char* num2_str, char* result_str) {
-    BigNum num1, num2, result;
-    BigNum_Init(&num1);
-    BigNum_Init(&num2);
-    BigNum_Init(&result);
-
-    BigNum_SetDecimal(&num1, num1_str);
-    BigNum_SetDecimal(&num2, num2_str);
-
-    BigNum_Multiply(&result, &num1, &num2);
-
-    BigNum_GetDecimal(&result, result_str, sizeof(result_str));
-
-    BigNum_Free(&num1);
-    BigNum_Free(&num2);
-    BigNum_Free(&result);
+/**
+ * multiply_numbers - A function that multiplies two
+ *			 positive integers
+ *
+ * @num1: first input integer
+ * @num2: second input integer
+ *
+ * Return: Always 0(success)
+ */
+int multiply_numbers(int num1, int num2)
+{
+	return num1 * num2;
 }
 
-int is_positive_integer(const char* str) {
-    while (*str) {
-        if (!isdigit(*str)) {
-            return 0;
-        }
-        str++;
-    }
-    return 1;
+/**
+ * _memset - A function that checks if input
+ *           integer is positive
+ *
+ * @str: string parameter of the function
+ *
+ * Return: Always 0(success)
+ */
+int is_positive_integer(const char* str)
+{
+	while (*str)
+	{
+		if (!isdigit(*str))
+			return (0);
+		str++;
+	}
+    return (1);
 }
 
+/**
+ * main - Execution of the code starts here
+ *        
+ *
+ * @argc: count parameter of the function
+ * @argv: vector parameter of the function
+ *
+ * Return: Always 0(success)
+ */
 int main(int argc, char *argv[]) {
-	char result_str[1024];
+    int num1, num2;
+	int result;
 
     if (argc != 3) {
         printf("Error\n");
@@ -44,11 +58,11 @@ int main(int argc, char *argv[]) {
         return 98;
     }
 
-    char result_str[1024];
+    num1 = atoi(argv[1]);
+    num2 = atoi(argv[2]);
 
-    multiply_numbers(argv[1], argv[2], result_str);
-
-    printf("%s\n", result_str);
+    result = multiply_numbers(num1, num2);
+    printf("%d\n", result);
 
     return 0;
 }
