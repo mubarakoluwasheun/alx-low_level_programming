@@ -37,7 +37,7 @@ void print_int(int n)
 }
 
 /**
- * mul- A function that multiplies two
+ * main- A function that multiplies two
  *      integers
  *
  * @argc: count parameter of the function
