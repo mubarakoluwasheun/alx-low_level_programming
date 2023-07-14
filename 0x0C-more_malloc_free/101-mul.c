@@ -12,8 +12,10 @@
 
 void print_error(void)
 {
+	int i;
+
     char *error = "Error\n";
-    for (int i = 0; error[i]; i++)
+    for (i = 0; error[i]; i++)
         putchar(error[i]);
 }
 
