@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i;
-	int n = 98;
+	int n = 97;
 	uint64_t fib1 = 1;
 	uint64_t fib2 = 2;
 	uint64_t fib3;
