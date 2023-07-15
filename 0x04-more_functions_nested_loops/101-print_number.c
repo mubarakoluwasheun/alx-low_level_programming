@@ -12,10 +12,10 @@
 void print_number(int n)
 {
 	unsigned int m;
-	int i, j, div;
+	unsigned int i, j, div;
 	char c;
 
-	if ( n == INT_MIN)
+	if (n == INT_MIN)
 	{
 		_putchar('-');
 		m = (unsigned int)(-(n + 1)) + 1;
@@ -27,7 +27,7 @@ void print_number(int n)
 	}
 	else
 	{
-		m = (unsigned int)(n);
+		m = (unsigned int)n;
 	}
 
 	div = 1;
