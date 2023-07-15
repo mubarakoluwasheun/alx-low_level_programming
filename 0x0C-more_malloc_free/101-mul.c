@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -37,7 +36,7 @@ int isPositiveInteger(const char *str)
 }
 
 /**
- * multiple - Execution of the code starts here
+ * main - Execution of the code starts here
  *
  * @argc: count parameter of the function
  * @argv: vector parameter of the function
@@ -45,7 +44,7 @@ int isPositiveInteger(const char *str)
  * Return: Always 0(success)
  */
 
-int mul(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int *num1, *num2;
 	int *result;
