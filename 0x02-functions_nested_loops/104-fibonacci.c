@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdint.h>
 
+/**
+ * main - A function that prints the first
+ *        98 fibonacci
+ *
+ * Return: Always 0(success)
+ */
 int main(void)
 {
 	int i;
@@ -28,7 +34,10 @@ int main(void)
 			secondHalf %= 1000000000000;
 		}
 
-		printf("%lu%012lu", firstHalf, secondHalf);
+		if (firstHalf != 0)
+			printf("%lu%012lu", firstHalf, secondHalf);
+		else
+			printf("%lu", secondHalf);
 		if (i < n)
 			printf(", ");
 
