@@ -5,10 +5,7 @@
 /**
  * largestPrime - a function that prints the largest prime
  *
- * Description - print prime factor of a certain mumber
- *
  * @number: the input number
- * @lFactor: variable that holds number
  * Return: returns result
  */
 
@@ -34,7 +31,6 @@ long largestPrime(long number)
 	{
 		lFactor = number;
 	}
-
 	return (lFactor);
 }
 
