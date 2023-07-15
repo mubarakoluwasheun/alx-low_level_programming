@@ -12,6 +12,10 @@ int main(void)
 {
 	int i;
 
+	if (i == 100)
+	{
+		printf("\n");
+	}
 	for (i = 1; i <= 100; i++)
 	{
 		if  (i % 3 == 0 && i % 5 == 0)
@@ -29,10 +33,6 @@ int main(void)
 		else
 		{
 			printf("%d ", i);
-		}
-		if (i == 100)
-		{
-			printf("\n");
 		}
 	}
 	return (0);
