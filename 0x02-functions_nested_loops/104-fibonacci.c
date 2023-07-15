@@ -7,7 +7,6 @@ int main(void)
 	int n = 97;
 	uint64_t fib1 = 1;
 	uint64_t fib2 = 2;
-	uint64_t fib3;
 	uint64_t fib1FirstHalf, fib1SecondHalf;
 	uint64_t fib2FirstHalf, fib2SecondHalf;
 	uint64_t firstHalf, secondHalf;
