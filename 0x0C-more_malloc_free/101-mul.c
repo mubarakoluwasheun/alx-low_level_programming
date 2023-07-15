@@ -59,25 +59,23 @@ int main(int argc, char *argv[])
 		free(num1);
 		free(num2);
 		free(result);
-		return (98);
+		exit(98);
 	}
-
 	if (argc != 3)
 	{
 		printf("Error\n");
 		free(num1);
 		free(num2);
 		free(result);
-		return (98);
+		exit(98);
 	}
-
 	if (!isPositiveInteger(argv[1]) || !isPositiveInteger(argv[2]))
 	{
 		printf("Error\n");
 		free(num1);
 		free(num2);
 		free(result);
-		return (98);
+		exit(98);
 	}
 	*num1 = atoi(argv[1]);
 	*num2 = atoi(argv[2]);
@@ -87,6 +85,5 @@ int main(int argc, char *argv[])
 	free(num1);
 	free(num2);
 	free(result);
-
 	return (0);
 }
