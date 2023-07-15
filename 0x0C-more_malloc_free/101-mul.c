@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * multiply_numbers - A function that multiplies two
+ * multiplyNumbers - A function that multiplies two
  *			 positive integers
  *
  * @num1: first input integer
@@ -11,20 +11,20 @@
  *
  * Return: Always 0(success)
  */
-int multiply_numbers(int num1, int num2)
+int multiplyNumbers(int num1, int num2)
 {
 	return (num1 * num2);
 }
 
 /**
- * is_positive_integer - A function that checks if input
+ * isPositiveInteger - A function that checks if input
  *           integer is positive
  *
  * @str: string parameter of the function
  *
  * Return: Always 0(success)
  */
-int is_positive_integer(const char *str)
+int isPositiveInteger(const char *str)
 {
 	while (*str)
 	{
@@ -46,46 +46,47 @@ int is_positive_integer(const char *str)
 
 int multiple(int argc, char *argv[])
 {
-    int *num1, *num2;
-    int *result;
+	int *num1, *num2;
+	int *result;
 
-    num1 = malloc(sizeof(int));
-    num2 = malloc(sizeof(int));
-    result = malloc(sizeof(int));
+	num1 = malloc(sizeof(int));
+	num2 = malloc(sizeof(int));
+	result = malloc(sizeof(int));
 
-    if (num1 == NULL || num2 == NULL || result == NULL)
-    {
-        printf("Error: memory allocation failed\n");
-        free(num1);
-        free(num2);
-        free(result);
-        return (98);
-    }
+	if (num1 == NULL || num2 == NULL || result == NULL)
+	{
+		printf("Error: memory allocation failed\n");
+		free(num1);
+		free(num2);
+		free(result);
+		return (98);
+	}
 
-    if (argc != 3)
-    {
-        printf("Error\n");
-        free(num1);
-        free(num2);
-        free(result);
-        return (98);
-    }
-    if (!is_positive_integer(argv[1]) || !is_positive_integer(argv[2]))
-    {
-        printf("Error\n");
-        free(num1);
-        free(num2);
-        free(result);
-        return (98);
-    }
-    *num1 = atoi(argv[1]);
-    *num2 = atoi(argv[2]);
-    *result = multiply_numbers(*num1, *num2);
-    printf("%d\n", *result);
+	if (argc != 3)
+	{
+		printf("Error\n");
+		free(num1);
+		free(num2);
+		free(result);
+		return (98);
+	}
 
-    free(num1);
-    free(num2);
-    free(result);
+	if (!isPositiveInteger(argv[1]) || !isPositiveInteger(argv[2]))
+	{
+		printf("Error\n");
+		free(num1);
+		free(num2);
+		free(result);
+		return (98);
+	}
+	*num1 = atoi(argv[1]);
+	*num2 = atoi(argv[2]);
+	*result = multiplyNumbers(*num1, *num2);
+	printf("%d\n", *result);
 
-    return (0);
+	free(num1);
+	free(num2);
+	free(result);
+
+	return (0);
 }
