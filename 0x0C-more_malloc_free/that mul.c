@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -45,15 +44,24 @@ int isPositiveInteger(const char *str)
  * Return: Always 0(success)
  */
 
-int mul(int argc, char *argv[])
+int multiple(int argc, char *argv[])
 {
 	int *num1, *num2;
 	int *result;
 
-	num1 = malloc(sizeof(int));
-	num2 = malloc(sizeof(int));
-	result = malloc(sizeof(int));
-
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (98);
+	}
+	if (!isPosistiveInteger(argv[1]) || !isPositiveInteger(argv[2]))
+	{
+		printf("Error\n");
+		return (98);
+	}
+	num1 = malloc((strlen(argv[1]) + 1 ) * sizeof(char));
+	num2 = malloc((strlen(argv[2]) + 1 ) * sizeof(char));
+	result = malloc((strlen(argv[2]) + 1) * sizeof(char));
 	if (num1 == NULL || num2 == NULL || result == NULL)
 	{
 		printf("Error: memory allocation failed\n");
@@ -62,32 +70,12 @@ int mul(int argc, char *argv[])
 		free(result);
 		return (98);
 	}
-
-	if (argc != 3)
-	{
-		printf("Error\n");
-		free(num1);
-		free(num2);
-		free(result);
-		return (98);
-	}
-
-	if (!isPositiveInteger(argv[1]) || !isPositiveInteger(argv[2]))
-	{
-		printf("Error\n");
-		free(num1);
-		free(num2);
-		free(result);
-		return (98);
-	}
-	*num1 = atoi(argv[1]);
-	*num2 = atoi(argv[2]);
-	*result = multiplyNumbers(*num1, *num2);
-	printf("%d\n", *result);
-
+	strcpy(num1, argv[1]);
+	strcpy(num2, argv[2]);
+	multiplyStrings(num1, num2, result);
+	printf("%s\n", result);
 	free(num1);
 	free(num2);
 	free(result);
-
 	return (0);
 }
