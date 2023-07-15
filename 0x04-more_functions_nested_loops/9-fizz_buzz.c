@@ -28,12 +28,9 @@ int main(void)
 		}
 		else
 		{
-			if (i == 100)
-			{
-				printf("\n");
-			}
 			printf("%d ", i);
 		}
 	}
+	printf("\n");
 	return (0);
 }
