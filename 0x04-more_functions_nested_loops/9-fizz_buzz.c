@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int i;
+	int i = 1;
 
 	if (i == 100)
 	{
