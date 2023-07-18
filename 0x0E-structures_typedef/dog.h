@@ -3,6 +3,9 @@
 
 /**
  * struct dog - A dog struct function
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
  *
  * Description: A type of structure name struct dog
  */
