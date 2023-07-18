@@ -3,6 +3,18 @@
 #include <string.h>
 #include "dog.h"
 
+/**
+ * new_dog - A function that creates a new dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ *
+ * Description: A function that creates a new dog
+ * which stores a copy of name and owner and
+ * returns NULL if the function fails
+ *
+ * Return: newDog value
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newDog;
