@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,6 +14,12 @@ void print_name(char *name, void (*f)(char *))
 	f(name);
 }
 
+/**
+ * print_char: A function that prints a string characters
+ * @name: A pointer to a character
+ *
+ * Return: None
+ */
 void print_char(char *name)
 {
 	while (*name)
