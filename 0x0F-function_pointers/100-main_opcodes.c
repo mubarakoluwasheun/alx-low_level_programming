@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 
 	ptr = (char *)main;
 
-	for (i = 0; i < num_bytes; i++)
+	for (i = 0; i < numBytes; i++)
 	{
 		printf("%02hhx", ptr[i]);
 		if (i < numBytes - 1)
