@@ -5,7 +5,7 @@
  * @name: the character pointer string
  * @f: a function pointer
  *
- * Return void
+ * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
