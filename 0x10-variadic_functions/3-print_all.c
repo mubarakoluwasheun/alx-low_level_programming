@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * print_all - a function that prints anything
@@ -47,6 +46,6 @@ void print_all(const char * const format, ...)
 		i++;
 		printed = 0;
 	}
+	putchar('\n');
 	va_end(args);
-	printf("\n");
 }
