@@ -15,6 +15,7 @@ void print_all(const char * const format, ...)
 	char *str;
 	int i = 0;
 	int printed = 0;
+	int j;
 
 	va_start(args, format);
 	while (format && format[i])
@@ -44,7 +45,10 @@ void print_all(const char * const format, ...)
 				printed = 1;
 				break;
 		}
-		if (format[i + 1] && printed)
+		j = i + 1;
+		while (format[j] && format[j] != 'i' && format[j] != 'f' && format[j] != 's')
+			j++;
+		if (format[j] && printed)
 			printf(", ");
 		i++;
 		printed = 0;
