@@ -3,7 +3,7 @@
 /**
  * print_list - A function that prints all the elements
  * of a list
- * @h: the pointer to the list
+ * @h: the pointer to the node
  *
  * Return: return the list
  */
