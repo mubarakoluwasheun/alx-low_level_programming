@@ -9,7 +9,7 @@ section .data
 section .note.GNU-stack noalloc noexec nowrite progbits
 
 section .text
-	global start
+	global _start
 
 _start:
 	; Write message to stdout
