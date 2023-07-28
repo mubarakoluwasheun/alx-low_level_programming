@@ -9,9 +9,9 @@ section .data
 section .note.GNU-stack noalloc noexec nowrite progbits
 
 section .text
-	global main
+	global start
 
-main:
+start:
 	; Write message to stdout
 	push rbp
 	mov rdi, message
