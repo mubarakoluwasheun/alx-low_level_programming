@@ -6,10 +6,12 @@ extern printf
 section .data
 	message db 'Hello, Holberton', 10, 0
 
-section .text
-	global _start
+section .note.GNU-stack noalloc noexec nowrite progbits
 
-_start:
+section .text
+	global main
+
+main:
 	; Write message to stdout
 	push rbp
 	mov rdi, message
