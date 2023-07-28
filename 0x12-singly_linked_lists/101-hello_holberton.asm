@@ -1,4 +1,4 @@
-; Compile with: nasm -f elf64 -o hello.o hello.asm && gcc -o hello hello.o
+; Compile with: nasm -f elf64 -o hello.o hello.asm && gcc -no-pie -nostartfiles -o hello hello.o
 ; Run with: ./hello
 
 extern printf
@@ -10,8 +10,7 @@ section .note.GNU-stack noalloc noexec nowrite progbits
 
 section .text
 	global _start
-
-start:
+_start:
 	; Write message to stdout
 	push rbp
 	mov rdi, message
