@@ -10,8 +10,14 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t count = 0;
 	const listint_t *slow, *fast;
+	const listint_t **addrs;
+	size_t i;
 
 	if (head == NULL)
+		exit(98);
+
+	addrs = malloc(sizeof(*addrs));
+	if (addrs == NULL)
 		exit(98);
 
 	slow = head;
@@ -24,15 +30,35 @@ size_t print_listint_safe(const listint_t *head)
 
 		if (slow == fast)
 		{
+			while (head != slow)
+			{
+				printf("[%p] %d\n", (void *)head, head->n);
+				head = head->next;
+				count++;
+			}
 			printf("->[%p] %d\n", (void *)slow, slow->n);
-			exit(98);
+			free(addrs);
+			return (count);
 		}
 	}
 	while (head)
 	{
+		for (i = 0; i < count; i++)
+			if (addrs[i] == head)
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				free(addrs);
+				return (count);
+			}
+
 		printf("[%p] %d\n", (void *)head, head->n);
+		addrs[count++] = head;
+		addrs = realloc(addrs, sizeof(*addrs) * (count + 1));
+
+		if (addrs == NULL)
+			exit(98);
 		head = head->next;
-		count++;
 	}
+	free(addrs);
 	return (count);
 }
