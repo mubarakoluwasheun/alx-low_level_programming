@@ -1,64 +1,37 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - A function that prints a linked list
+ * print_listint_safe - prints a listint_t linked list
  * @head: pointer to the head of the list
  *
- * Return: Returns the number of nodes in the list
+ * Return: the number of nodes in the list
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t count = 0;
-	const listint_t *slow, *fast;
-	const listint_t **addrs;
-	size_t i;
+    size_t count = 0, i;
+    const listint_t **array;
 
-	if (head == NULL)
-		exit(98);
+    array = malloc(sizeof(listint_t *) * 1024);
+    if (array == NULL)
+        exit(98);
 
-	addrs = malloc(sizeof(*addrs));
-	if (addrs == NULL)
-		exit(98);
+    while (head != NULL)
+    {
+        for (i = 0; i < count; i++)
+        {
+            if (array[i] == head)
+            {
+                printf("-> [%p] %d\n", (void *)head, head->n);
+                free(array);
+                return (count);
+            }
+        }
+        printf("[%p] %d\n", (void *)head, head->n);
+        array[count] = head;
+        count++;
+        head = head->next;
+    }
 
-	slow = head;
-	fast = head;
-
-	while (fast && fast->next)
-	{
-		slow = slow->next;
-		fast = fast->next->next;
-
-		if (slow == fast)
-		{
-			while (head != slow)
-			{
-				printf("[%p] %d\n", (void *)head, head->n);
-				head = head->next;
-				count++;
-			}
-			printf("->[%p] %d\n", (void *)slow, slow->n);
-			free(addrs);
-			return (count);
-		}
-	}
-	while (head)
-	{
-		for (i = 0; i < count; i++)
-			if (addrs[i] == head)
-			{
-				printf("-> [%p] %d\n", (void *)head, head->n);
-				free(addrs);
-				return (count);
-			}
-
-		printf("[%p] %d\n", (void *)head, head->n);
-		addrs[count++] = head;
-		addrs = realloc(addrs, sizeof(*addrs) * (count + 1));
-
-		if (addrs == NULL)
-			exit(98);
-		head = head->next;
-	}
-	free(addrs);
-	return (count);
+    free(array);
+    return (count);
 }
