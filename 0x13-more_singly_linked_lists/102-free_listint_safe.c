@@ -23,10 +23,10 @@ size_t free_listint_safe(listint_t **h)
 
 		if (temp <= current)
 		{
-			free(temp);
 			break;
 		}
 	}
+	free(temp);
 	count++;
 
 	*h = NULL;
