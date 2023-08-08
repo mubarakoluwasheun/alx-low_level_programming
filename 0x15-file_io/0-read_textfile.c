@@ -12,13 +12,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	size_t n_read, n_write;
+	ssize_t n_read, n_write;
 	char *buffer;
 
 	if (filename == NULL || letters == 0)
 		return (0);
 
-	fd = open(filename, O_RDONLY)
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 
