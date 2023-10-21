@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <elf.h>
+#include <string.h>
 
 /* Functions prototypes */
 void print_entry(uint64_t e_entry);
