@@ -1,5 +1,8 @@
 #include "lists.h"
 
+dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position.
  * @h: double pointer to the head of the list
