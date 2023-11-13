@@ -9,19 +9,19 @@
  * Return: pointer to the beginning of the located substring
  * or NULL if the substring is not found
  */
-char *_strstr(char *search, char *source)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 
-	for (i = 0; search[i] != '\0'; i++)
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		for (j = 0; source[j] != '\0'; j++)
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			if (search[i + j] != source[j])
+			if (haystack[i + j] != needle[j])
 				break;
 		}
-		if (!source[j])
-			return (&search[i]);
+		if (!needle[j])
+			return (&haystack[i]);
 	}
 	return (NULL);
 }
